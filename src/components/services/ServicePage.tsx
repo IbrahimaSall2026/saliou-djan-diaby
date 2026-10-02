@@ -16,7 +16,8 @@ export default function ServicePage({ service }: ServicePageProps) {
           fill
           sizes="100vw"
           priority
-          className="object-cover object-center"
+          className="object-cover"
+          style={{ objectPosition: service.heroImagePosition ?? "center" }}
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/45" />

@@ -16,7 +16,7 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
           fill
           sizes="100vw"
           priority
-          className="object-cover object-center"
+          className={`object-cover ${realisation.heroImagePosition ?? "object-center"}`}
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/55" />

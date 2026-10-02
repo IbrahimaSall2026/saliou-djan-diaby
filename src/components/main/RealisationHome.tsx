@@ -15,8 +15,9 @@ export default function RealisationHome() {
 							Des paroles qui font avancer
 						</h2>
 						<p className="mt-4 text-base leading-7 text-slate-300">
-							Cérémonies, formations et interventions d&apos;expert : quelques moments
-							marquants de mon parcours.
+							Cérémonies, productions publicitaires et émissions : quelques
+							projets qui illustrent mon travail de maîtresse de cérémonie,
+							journaliste et productrice.
 						</p>
 					</div>
 					<Link

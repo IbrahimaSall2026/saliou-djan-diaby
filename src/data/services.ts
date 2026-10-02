@@ -18,6 +18,7 @@ export type Service = {
   detailedDescription: string;
   image: string;
   imageAlt: string;
+  heroImagePosition?: string;
   heroEyebrow: string;
   ctaLabel: string;
   secondaryCtaLabel: string;
@@ -121,8 +122,9 @@ export const services = [
     shortDescription: "Imaginer et produire des émissions engageantes, de l'idée à la réalisation.",
     detailedDescription:
       "J'accompagne la création et la production d'émissions en veillant à la cohérence du concept, au rythme des séquences et à l'expérience du public.",
-    image: "/images/conferencier.jpg",
-    imageAlt: "Saliou Djan Diaby lors d'une prise de parole",
+    image: "/images/emission-hero.jpg",
+    imageAlt: "Saliou Djan Diaby en studio pendant l'enregistrement d'une émission",
+    heroImagePosition: "40% center",
     heroEyebrow: "Des émissions pensées pour leur public",
     ctaLabel: "Parlons de votre émission",
     secondaryCtaLabel: "Découvrir le processus",
@@ -137,8 +139,8 @@ export const services = [
           "Le ton, le rythme et le déroulé sont pensés pour maintenir l'intérêt et servir le sujet de chaque épisode.",
         ],
         mediaType: "image",
-        image: "/images/conferencier.jpg",
-        imageAlt: "Préparation d'une émission et prise de parole",
+        image: "/images/emission-plateau-radio.jpg",
+        imageAlt: "Équipe réunie autour des microphones dans un studio radio",
         imagePosition: "object-center",
       },
       {
@@ -149,8 +151,8 @@ export const services = [
           "Chaque étape contribue à produire une émission fluide, cohérente et adaptée à son audience.",
         ],
         mediaType: "video",
-        image: "/images/conferencier.jpg",
-        imageAlt: "Aperçu d'une émission en production",
+        image: "/images/emission-hero.jpg",
+        imageAlt: "Aperçu d'une émission enregistrée en studio",
         imagePosition: "object-center",
         videoLabel: "Découvrir le format",
         videoDescription: "Un aperçu de la création et de la production d'une émission.",

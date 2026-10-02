@@ -78,8 +78,8 @@ export default function Header() {
             className="group flex min-w-0 items-center gap-3"
           >
           <Image
-            className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-white/20 transition duration-300 group-hover:ring-white/50"
-            src="/images/profil.jpg"
+            className="h-10 w-10 shrink-0 rounded-full object-cover object-top ring-1 ring-white/20 transition duration-300 group-hover:ring-white/50"
+            src="/images/emission-saliou-studio.jpg"
             alt="Portrait de SALIOU DJAN DIABY"
             width={40}
             height={40}

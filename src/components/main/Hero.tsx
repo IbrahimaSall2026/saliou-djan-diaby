@@ -7,15 +7,15 @@ export default function Hero() {
 			<div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
 				<div className="flex flex-col items-start">
 					<p className="hero-badge-animation mb-5 cursor-pointer rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-200 transition duration-300 hover:border-slate-500 hover:bg-slate-900/80 hover:text-white">
-						MAÎTRESSE DE CÉRÉMONIE (MC) • MARQUES & ÉMISSIONS
+						MAÎTRESSE DE CÉRÉMONIE • JOURNALISTE • PRODUCTRICE D&apos;ÉMISSIONS
 					</p>
 					<h1 className="text-4xl font-bold text-white md:text-6xl">
 						Saliou Djan Diaby
 					</h1>
 					<p className="mt-6 max-w-xl text-lg leading-8 text-neutral-400">
-						Sublimez vos événements et captivez votre public. J&apos;allie art
-						oratoire, charisme et maîtrise du protocole pour transformer chaque
-						intervention en un moment mémorable.
+						Sublimez vos événements et captivez votre public. J&apos;allie
+						maîtrise de la scène, rigueur journalistique et sens du protocole
+						pour transformer chaque intervention en un moment mémorable.
 					</p>
 					<div className="mt-8 flex w-full justify-center">
 						<Link
@@ -29,12 +29,12 @@ export default function Hero() {
 
 				<div className="relative h-[300px] w-full overflow-hidden rounded-3xl border border-neutral-800 shadow-2xl shadow-black/30 sm:h-[400px] lg:h-[580px]">
 					<Image
-						src="/images/profil.jpg"
+						src="/images/emission-saliou-studio.jpg"
 						alt="Portrait de Saliou Djan Diaby"
 						fill
 						sizes="(max-width: 768px) 100vw, 448px"
 						priority
-						className="object-cover"
+						className="object-cover object-top"
 					/>
 				</div>
 			</div>

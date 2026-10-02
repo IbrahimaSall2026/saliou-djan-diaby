@@ -24,6 +24,7 @@ export type Realisation = {
   detailedDescription: string;
   image: string;
   imageAlt: string;
+  heroImagePosition?: "object-center" | "object-top";
   heroEyebrow: string;
   ctaLabel: string;
   secondaryCtaLabel: string;
@@ -130,8 +131,9 @@ export const realisations = [
     description: "Éclairer les décisions stratégiques, faire dialoguer les perspectives et accompagner les ambitions qui façonnent le développement économique.",
     detailedDescription:
       "Je transforme les sujets complexes en perspectives accessibles et directement utiles à la décision, dans un dialogue vivant avec les publics.",
-    image: "/images/intervention-panel-simandou.jpg",
-    imageAlt: "Intervention d'expert lors d'une table ronde sur le développement économique",
+    image: "/images/emission-saliou-studio.jpg",
+    imageAlt: "Présentatrice en studio devant un microphone pendant l'enregistrement d'une émission",
+    heroImagePosition: "object-top",
     heroEyebrow: "Réalisations",
     ctaLabel: "Échanger sur votre projet",
     secondaryCtaLabel: "Découvrir l'expertise",

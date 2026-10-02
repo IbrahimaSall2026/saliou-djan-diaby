@@ -10,11 +10,12 @@ export default function APropos() {
 						À propos
 					</p>
 					<h2 className="mt-5 text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
-						La parole juste, au bon moment.
+						Des événements et des émissions qui marquent.
 					</h2>
 					<p className="mt-6 text-base leading-8 text-slate-300 md:text-lg">
-						Je suis Maîtresse de Cérémonie et j&apos;accompagne les marques dans
-						leur valorisation ainsi que la création et la production d&apos;émissions.
+						Maîtresse de cérémonie, journaliste et productrice d&apos;émissions,
+						j&apos;accompagne vos événements et vos projets de la préparation à
+						leur réalisation, avec rigueur et sens du récit.
 					</p>
 					<Link
 						href="/a-propos"
