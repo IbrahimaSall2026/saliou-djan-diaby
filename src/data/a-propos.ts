@@ -12,7 +12,7 @@ export const aProposData = {
     title: "Ma passion pour une parole juste et maîtrisée",
     paragraphs: [
       "Mon parcours s'est construit autour de l'art oratoire, de la présence et du sens du détail. J'ai appris à faire de ma voix un outil de transmission, capable de donner du rythme à une idée et de créer un lien sincère avec un public.",
-      "Ma passion pour le protocole m'a naturellement conduit vers le métier de Maître de Cérémonie. Je veille à chaque transition, à chaque prise de parole et à chaque moment pour que l'ensemble reste fluide, élégant et fidèle à l'intention du projet.",
+      "Ma passion pour le protocole m'a naturellement conduite vers le métier de Maîtresse de Cérémonie. Je veille à chaque transition, à chaque prise de parole et à chaque moment pour que l'ensemble reste fluide, élégant et fidèle à l'intention du projet.",
     ],
     image: "/images/profil.jpg",
     imageAlt: "Saliou Djan Diaby, passionné par l'art oratoire et le protocole",
@@ -23,7 +23,7 @@ export const aProposData = {
     lead:
       "La prise de parole est au cœur de mon parcours. Elle m'a appris qu'une voix ne se résume pas à ce qu'elle dit : elle porte une intention, une énergie et une relation avec celles et ceux qui l'écoutent.",
     paragraphs: [
-      "En tant que Maître de Cérémonie, je veille au rythme, au protocole et à la fluidité de chaque séquence. En formation et en conférence, je transmets des outils concrets pour structurer les idées, gagner en assurance et créer un impact durable.",
+      "En tant que Maîtresse de Cérémonie, je veille au rythme, au protocole et à la fluidité de chaque séquence. J'accompagne également les marques dans leur valorisation et les projets d'émissions, de la création à la production.",
       "Mon approche associe exigence et écoute afin que chaque intervention reste fidèle à l'identité du projet et aux personnes qui le portent.",
     ],
   },

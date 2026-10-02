@@ -8,9 +8,9 @@ import { realisations } from "@/data/realisations";
 
 const categories: readonly ("Toutes" | RealisationCategory)[] = [
   "Toutes",
-  "Conférence",
-  "Maîtrise de cérémonie",
-  "Formation",
+  "Cérémonie animée",
+  "Publicité réalisée",
+  "Émission produite",
 ];
 
 export default function RealisationGrid() {

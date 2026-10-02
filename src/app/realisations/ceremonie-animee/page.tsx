@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import RealisationPage from "@/components/realisations/RealisationPage";
 import { getRealisationBySlug } from "@/data/realisations";
 
-export default function FormationsDispenseesPage() {
-  const realisation = getRealisationBySlug("formations-dispensees");
+export default function CeremonieAnimeePage() {
+  const realisation = getRealisationBySlug("ceremonie-animee");
 
   if (!realisation) {
     notFound();

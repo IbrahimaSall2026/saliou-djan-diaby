@@ -3,7 +3,7 @@ import ServicePage from "@/components/services/ServicePage";
 import { getServiceBySlug } from "@/data/services";
 
 export default function ConferencierPage() {
-  const service = getServiceBySlug("conferencier");
+  const service = getServiceBySlug("creation-production-emissions");
 
   if (!service) {
     notFound();

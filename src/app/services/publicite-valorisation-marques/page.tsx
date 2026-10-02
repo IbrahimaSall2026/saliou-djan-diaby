@@ -3,7 +3,7 @@ import ServicePage from "@/components/services/ServicePage";
 import { getServiceBySlug } from "@/data/services";
 
 export default function FormateurEnArtOratoirePage() {
-  const service = getServiceBySlug("formateur-en-art-oratoire");
+  const service = getServiceBySlug("publicite-valorisation-marques");
 
   if (!service) {
     notFound();

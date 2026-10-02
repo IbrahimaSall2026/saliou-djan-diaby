@@ -3,7 +3,7 @@ import ServicePage from "@/components/services/ServicePage";
 import { getServiceBySlug } from "@/data/services";
 
 export default function MaitreDeCeremoniePage() {
-  const service = getServiceBySlug("maitre-de-ceremonie");
+  const service = getServiceBySlug("maitresse-de-ceremonie");
 
   if (!service) {
     notFound();

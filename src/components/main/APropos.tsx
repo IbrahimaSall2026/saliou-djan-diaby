@@ -13,9 +13,8 @@ export default function APropos() {
 						La parole juste, au bon moment.
 					</h2>
 					<p className="mt-6 text-base leading-8 text-slate-300 md:text-lg">
-						Je suis Maître de Cérémonie et formateur en art oratoire. J&apos;accompagne
-						les événements avec une présence attentive et je transmets des outils
-						concrets pour prendre la parole avec clarté, assurance et impact.
+						Je suis Maîtresse de Cérémonie et j&apos;accompagne les marques dans
+						leur valorisation ainsi que la création et la production d&apos;émissions.
 					</p>
 					<Link
 						href="/a-propos"

@@ -130,9 +130,9 @@ export default function ContactPage() {
                     <option value="" disabled>
                       -- Sélectionnez un service / sujet --
                     </option>
-                    <option value="maitre-de-ceremonie">Maître de Cérémonie (MC)</option>
-                    <option value="formateur-en-art-oratoire">Formateur en art oratoire</option>
-                    <option value="conferencier">Conférencier</option>
+                    <option value="maitresse-de-ceremonie">Maîtresse de Cérémonie (MC)</option>
+                    <option value="publicite-valorisation-marques">Publicité &amp; Valorisation de marques</option>
+                    <option value="creation-production-emissions">Création &amp; production d&apos;émissions</option>
                     <option value="autre-projet-collaboration">Autre projet / Collaboration</option>
                   </select>
                   <span

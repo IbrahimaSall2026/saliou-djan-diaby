@@ -7,7 +7,7 @@ export default function Hero() {
 			<div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
 				<div className="flex flex-col items-start">
 					<p className="hero-badge-animation mb-5 cursor-pointer rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-200 transition duration-300 hover:border-slate-500 hover:bg-slate-900/80 hover:text-white">
-						MAÎTRE DE CÉRÉMONIE (MC) • FORMATEUR EN ART ORATOIRE
+						MAÎTRESSE DE CÉRÉMONIE (MC) • MARQUES & ÉMISSIONS
 					</p>
 					<h1 className="text-4xl font-bold text-white md:text-6xl">
 						Saliou Djan Diaby

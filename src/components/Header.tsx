@@ -12,15 +12,15 @@ const navLinks = [
 ] as const;
 
 const serviceLinks = [
-  { href: "/services/maitre-de-ceremonie", label: "Maître de Cérémonie (MC)" },
-  { href: "/services/formateur-en-art-oratoire", label: "Formateur en art oratoire" },
-  { href: "/services/conferencier", label: "Conférencier" },
+  { href: "/services/maitresse-de-ceremonie", label: "Maîtresse de Cérémonie (MC)" },
+  { href: "/services/publicite-valorisation-marques", label: "Publicité & Valorisation de marques" },
+  { href: "/services/creation-production-emissions", label: "Création & production d'émissions" },
 ] as const;
 
 const realisationLinks = [
-  { href: "/realisations/animation-de-ceremonies", label: "Animation de cérémonies" },
-  { href: "/realisations/formations-dispensees", label: "Formations dispensées" },
-  { href: "/realisations/interventions-dexpert", label: "Interventions d'expert" },
+  { href: "/realisations/ceremonie-animee", label: "Cérémonie animée" },
+  { href: "/realisations/publicite-realisee", label: "Publicité réalisée" },
+  { href: "/realisations/emission-produite", label: "Émission produite" },
 ] as const;
 
 export default function Header() {

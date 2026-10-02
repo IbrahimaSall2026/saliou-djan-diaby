@@ -1,7 +1,7 @@
 export type RealisationCategory =
-  | "Maîtrise de cérémonie"
-  | "Formation"
-  | "Conférence";
+  | "Cérémonie animée"
+  | "Publicité réalisée"
+  | "Émission produite";
 
 export type RealisationSection = {
   eyebrow: string;
@@ -36,9 +36,9 @@ export type Realisation = {
 export const realisations = [
   {
     id: 1,
-    slug: "animation-de-ceremonies",
-    title: "Animation de Cérémonies",
-    category: "Maîtrise de cérémonie",
+    slug: "ceremonie-animee",
+    title: "Cérémonie animée",
+    category: "Cérémonie animée",
     description: "Une animation élégante, rythmée et maîtrisée pour donner de l'impact à vos événements institutionnels et galas.",
     detailedDescription:
       "Je veille au rythme, au protocole et à la fluidité des prises de parole pour faire de chaque cérémonie un moment clair et mémorable.",
@@ -80,9 +80,9 @@ export const realisations = [
   },
   {
     id: 2,
-    slug: "formations-dispensees",
-    title: "Formations dispensées",
-    category: "Formation",
+    slug: "publicite-realisee",
+    title: "Publicité réalisée",
+    category: "Publicité réalisée",
     description: "Transmettre la puissance de la parole pour révéler des voix capables d'inspirer, de convaincre et de créer un impact durable.",
     detailedDescription:
       "J'accompagne chaque participant avec une pédagogie concrète, exigeante et bienveillante, de la technique à la pleine expression.",
@@ -124,9 +124,9 @@ export const realisations = [
   },
   {
     id: 3,
-    slug: "interventions-dexpert",
-    title: "Interventions d'expert",
-    category: "Conférence",
+    slug: "emission-produite",
+    title: "Émission produite",
+    category: "Émission produite",
     description: "Éclairer les décisions stratégiques, faire dialoguer les perspectives et accompagner les ambitions qui façonnent le développement économique.",
     detailedDescription:
       "Je transforme les sujets complexes en perspectives accessibles et directement utiles à la décision, dans un dialogue vivant avec les publics.",
