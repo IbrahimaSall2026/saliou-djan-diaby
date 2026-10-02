@@ -29,6 +29,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.hero-background-image {
+  object-position: var(--hero-mobile-position, center);
+}
+
+@media (min-width: 768px) {
+  .hero-background-image {
+    object-position: var(--hero-desktop-position, center);
+  }
+}
+
 main > section[data-scroll-reveal="pending"],
 main > section[data-scroll-reveal="visible"] {
   transition:

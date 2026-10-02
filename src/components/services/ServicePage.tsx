@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import type { Service } from "@/data/services";
 
 type ServicePageProps = {
@@ -7,6 +8,12 @@ type ServicePageProps = {
 };
 
 export default function ServicePage({ service }: ServicePageProps) {
+  const prioritizeMediaOnMobile = [
+    "maitresse-de-ceremonie",
+    "publicite-valorisation-marques",
+    "creation-production-emissions",
+  ].includes(service.slug);
+
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <section className="relative isolate min-h-[min(760px,calc(100vh-5rem))] overflow-hidden border-b border-white/10 bg-zinc-950">
@@ -16,8 +23,11 @@ export default function ServicePage({ service }: ServicePageProps) {
           fill
           sizes="100vw"
           priority
-          className="object-cover"
-          style={{ objectPosition: service.heroImagePosition ?? "center" }}
+          className="hero-background-image object-cover"
+          style={{
+            "--hero-mobile-position": service.heroImagePositionMobile ?? "center",
+            "--hero-desktop-position": service.heroImagePosition ?? "center",
+          } as CSSProperties}
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-black/45" />
@@ -73,7 +83,7 @@ export default function ServicePage({ service }: ServicePageProps) {
               className="grid min-w-0 items-center gap-8 border-t border-white/10 pt-10 sm:gap-10 sm:pt-12 md:grid-cols-2 md:gap-16 md:pt-16"
             >
               {section.mediaType === "video" ? (
-                <div className="order-2 relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 md:order-2">
+                <div className={`${prioritizeMediaOnMobile ? "order-1" : "order-2"} relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 md:order-2`}>
                   <Image
                     src={section.image}
                     alt={section.imageAlt}
@@ -101,7 +111,7 @@ export default function ServicePage({ service }: ServicePageProps) {
                   </div>
                 </div>
               ) : (
-                <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}>
+                <div className={`${prioritizeMediaOnMobile ? "order-1" : ""} relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}>
                   <Image
                     src={section.image}
                     alt={section.imageAlt}
@@ -113,7 +123,7 @@ export default function ServicePage({ service }: ServicePageProps) {
                 </div>
               )}
 
-              <div className={`min-w-0 ${section.mediaType === "video" || index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
+              <div className={`${prioritizeMediaOnMobile ? "order-2" : ""} min-w-0 ${section.mediaType === "video" || index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 sm:text-sm sm:tracking-[0.2em]">
                   {section.eyebrow}
                 </p>

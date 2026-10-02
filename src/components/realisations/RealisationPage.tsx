@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import type { Realisation } from "@/data/realisations";
 
 type RealisationPageProps = {
@@ -7,6 +8,12 @@ type RealisationPageProps = {
 };
 
 export default function RealisationPage({ realisation }: RealisationPageProps) {
+  const prioritizeMediaOnMobile = [
+    "ceremonie-animee",
+    "publicite-realisee",
+    "emission-produite",
+  ].includes(realisation.slug);
+
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
       <section className="relative isolate min-h-[min(760px,100vh)] overflow-hidden border-b border-white/10 bg-zinc-950">
@@ -16,7 +23,12 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
           fill
           sizes="100vw"
           priority
-          className={`object-cover ${realisation.heroImagePosition ?? "object-center"}`}
+          className="hero-background-image object-cover"
+          style={{
+            "--hero-mobile-position": realisation.heroImagePositionMobile ?? "center",
+            "--hero-desktop-position":
+              realisation.heroImagePosition === "object-top" ? "center top" : "center",
+          } as CSSProperties}
         />
         <div className="absolute inset-0 bg-black/65" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/55" />
@@ -103,7 +115,7 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
                   </div>
                 </div>
               ) : (
-                <div className={`relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}>
+                <div className={`${prioritizeMediaOnMobile ? "order-1" : ""} relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}>
                   <Image
                     src={section.image}
                     alt={section.imageAlt}
@@ -115,7 +127,7 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
                 </div>
               )}
 
-              <div className={`min-w-0 ${section.mediaType === "video" || index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
+              <div className={`${prioritizeMediaOnMobile ? "order-2" : ""} min-w-0 ${section.mediaType === "video" || index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 sm:text-sm sm:tracking-[0.2em]">
                   {section.eyebrow}
                 </p>
