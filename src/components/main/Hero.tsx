@@ -10,7 +10,7 @@ export default function Hero() {
 						MAÎTRE DE CÉRÉMONIE (MC) • FORMATEUR EN ART ORATOIRE
 					</p>
 					<h1 className="text-4xl font-bold text-white md:text-6xl">
-						Diallo Thierno Ila
+						Saliou Djan Diaby
 					</h1>
 					<p className="mt-6 max-w-xl text-lg leading-8 text-neutral-400">
 						Sublimez vos événements et captivez votre public. J&apos;allie art
@@ -30,7 +30,7 @@ export default function Hero() {
 				<div className="relative h-[300px] w-full overflow-hidden rounded-3xl border border-neutral-800 shadow-2xl shadow-black/30 sm:h-[400px] lg:h-[580px]">
 					<Image
 						src="/images/profil.jpg"
-						alt="Portrait de Diallo Thierno Ila"
+						alt="Portrait de Saliou Djan Diaby"
 						fill
 						sizes="(max-width: 768px) 100vw, 448px"
 						priority

@@ -6,7 +6,7 @@ export default function ContactPage() {
       <section className="relative isolate min-h-[34rem] overflow-hidden border-b border-white/10 md:min-h-[42rem]">
         <Image
           src="/images/profil.jpg"
-          alt="Portrait de Thierno Ila Diallo"
+          alt="Portrait de Saliou Djan Diaby"
           fill
           priority
           sizes="100vw"
@@ -55,10 +55,10 @@ export default function ContactPage() {
                   Email
                 </p>
                 <a
-                  href="mailto:contact@thiernoiladiallo.com"
+                  href="mailto:contact@salioudjandiaby.com"
                   className="mt-2 inline-block text-base text-white transition-colors hover:text-blue-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
                 >
-                  contact@thiernoiladiallo.com
+                  contact@salioudjandiaby.com
                 </a>
               </div>
               <div>

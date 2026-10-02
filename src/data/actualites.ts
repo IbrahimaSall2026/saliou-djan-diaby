@@ -44,7 +44,7 @@ export const actualites = {
     subtitle:
       "Rencontres, prises de parole et moments forts : découvrez les histoires qui nourrissent une vision engagée de l'événementiel et de la transmission.",
     image: "/images/actualite-1.jpg",
-    imageAlt: "Thierno Ila Diallo pendant un échange professionnel",
+    imageAlt: "Saliou Djan Diaby pendant un échange professionnel",
   },
   firstBlock: {
     indexLabel: "01 / Rencontre",
@@ -59,7 +59,7 @@ export const actualites = {
       "Retour sur un temps d'échange placé sous le signe de l'écoute, de l'engagement et de la transmission.",
     ],
     image: "/images/actualite-1.jpg",
-    imageAlt: "Thierno Ila Diallo lors d'une rencontre professionnelle",
+    imageAlt: "Saliou Djan Diaby lors d'une rencontre professionnelle",
     imageBadge: "Rencontre & partage",
   },
   secondBlock: {
@@ -75,7 +75,7 @@ export const actualites = {
     ],
     mediaType: "video",
     image: "/images/actualite-1.jpg",
-    imageAlt: "Aperçu d'une rencontre animée par Thierno Ila Diallo",
+    imageAlt: "Aperçu d'une rencontre animée par Saliou Djan Diaby",
     mediaLabel: "Extrait vidéo à venir",
     mediaDescription: "Retrouvez prochainement les coulisses de ces échanges.",
     playAriaLabel: "Vidéo bientôt disponible",

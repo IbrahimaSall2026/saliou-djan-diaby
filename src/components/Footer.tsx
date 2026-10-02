@@ -10,7 +10,7 @@ const socialLinks = [
 		),
 	},
 	{
-		href: "https://www.facebook.com/share/1HV6LmJhZ2/",
+		href: "https://www.facebook.com/share/18pvSMkmp1/",
 		label: "Facebook",
 		color: "text-[#1877F2] hover:bg-[#1877F2]",
 		icon: (
@@ -30,7 +30,7 @@ const socialLinks = [
 		),
 	},
 	{
-		href: "https://www.tiktok.com/@mic.dropmoments?_r=1&_t=ZS-99z3s0vk3G8",
+		href: "https://www.tiktok.com/@sali.sdd?_r=1&_t=ZS-9AE1ECv7Fzw",
 		label: "TikTok",
 		color: "text-white hover:bg-black",
 		icon: (
@@ -47,7 +47,7 @@ export default function Footer() {
 			<div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-10 md:flex-row md:items-center md:justify-between md:px-8 lg:py-12">
 				<div className="text-left">
 					<p className="text-lg font-semibold tracking-wider text-white">
-						Diallo Thierno Ila
+						Saliou Djan Diaby
 					</p>
 					<p className="mt-2 max-w-sm text-sm leading-6 text-slate-400">
 						Formateur et conférencier, j&apos;accompagne les talents et les
@@ -78,7 +78,7 @@ export default function Footer() {
 
 			<div className="border-t border-slate-800 pt-4 pb-5 text-center">
 				<p className="px-6 text-xs text-slate-400">
-					© {new Date().getFullYear()} Diallo Thierno Ila. Tous droits réservés.
+					© {new Date().getFullYear()} Saliou Djan Diaby. Tous droits réservés.
 				</p>
 			</div>
 		</footer>

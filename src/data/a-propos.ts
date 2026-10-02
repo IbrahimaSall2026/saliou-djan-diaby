@@ -1,11 +1,11 @@
 export const aProposData = {
   hero: {
     eyebrow: "Une voix, une présence, une direction",
-    title: "À propos de Thierno Ila Diallo",
+    title: "À propos de Saliou Djan Diaby",
     description:
       "Maître de cérémonie, formateur en art oratoire et conférencier, j'accompagne les moments où la parole doit rassembler et faire avancer.",
     image: "/images/profil.jpg",
-    imageAlt: "Portrait de Thierno Ila Diallo",
+    imageAlt: "Portrait de Saliou Djan Diaby",
   },
   introduction: {
     eyebrow: "Mon histoire",
@@ -15,7 +15,7 @@ export const aProposData = {
       "Ma passion pour le protocole m'a naturellement conduit vers le métier de Maître de Cérémonie. Je veille à chaque transition, à chaque prise de parole et à chaque moment pour que l'ensemble reste fluide, élégant et fidèle à l'intention du projet.",
     ],
     image: "/images/profil.jpg",
-    imageAlt: "Thierno Ila Diallo, passionné par l'art oratoire et le protocole",
+    imageAlt: "Saliou Djan Diaby, passionné par l'art oratoire et le protocole",
   },
   presentation: {
     eyebrow: "Présentation & histoire",
@@ -29,9 +29,9 @@ export const aProposData = {
   },
   media: {
     image: "/images/profil.jpg",
-    imageAlt: "Aperçu vidéo de Thierno Ila Diallo",
+    imageAlt: "Aperçu vidéo de Saliou Djan Diaby",
     videoUrl: "https://www.youtube.com/embed/votre-video-id",
-    buttonLabel: "Lire la vidéo de présentation de Thierno Ila Diallo",
+    buttonLabel: "Lire la vidéo de présentation de Saliou Djan Diaby",
     caption: "Voir le parcours",
   },
   missionVision: {

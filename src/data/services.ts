@@ -36,7 +36,7 @@ export const services = [
     detailedDescription:
       "J'installe le rythme, la clarté et l'élégance nécessaires pour guider chaque séquence avec précision, tout en respectant le protocole et l'identité de votre événement.",
     image: "/images/profil.jpg",
-    imageAlt: "Diallo Thierno Ila, Maître de Cérémonie",
+    imageAlt: "Saliou Djan Diaby, Maître de Cérémonie",
     heroEyebrow: "Une présence qui donne le ton",
     ctaLabel: "Parlons de votre événement",
     secondaryCtaLabel: "Découvrir le savoir-faire",
@@ -52,7 +52,7 @@ export const services = [
         ],
         mediaType: "image",
         image: "/images/profil.jpg",
-        imageAlt: "Diallo Thierno Ila, Maître de Cérémonie",
+        imageAlt: "Saliou Djan Diaby, Maître de Cérémonie",
         imagePosition: "object-[center_30%]",
       },
       {
@@ -64,7 +64,7 @@ export const services = [
         ],
         mediaType: "video",
         image: "/images/profil.jpg",
-        imageAlt: "Aperçu vidéo d'une cérémonie animée par Thierno Ila Diallo",
+        imageAlt: "Aperçu vidéo d'une cérémonie animée par Saliou Djan Diaby",
         imagePosition: "object-[center_65%]",
         videoLabel: "Vidéo de présentation",
         videoDescription: "Un aperçu de ma manière d'accompagner vos cérémonies.",
@@ -122,7 +122,7 @@ export const services = [
     detailedDescription:
       "Je construis des conférences claires, incarnées et adaptées à chaque auditoire pour éveiller les idées, faire naître l'engagement et ouvrir de nouvelles perspectives.",
     image: "/images/conferencier.jpg",
-    imageAlt: "Thierno Ila Diallo pendant une conférence",
+    imageAlt: "Saliou Djan Diaby pendant une conférence",
     heroEyebrow: "Conférences qui font avancer",
     ctaLabel: "Inviter le conférencier",
     secondaryCtaLabel: "Découvrir l'approche",
@@ -138,7 +138,7 @@ export const services = [
         ],
         mediaType: "image",
         image: "/images/conferencier.jpg",
-        imageAlt: "Intervention de Thierno Ila Diallo sur scène",
+        imageAlt: "Intervention de Saliou Djan Diaby sur scène",
         imagePosition: "object-center",
       },
       {

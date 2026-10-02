@@ -7,7 +7,7 @@ export default function RealisationsPage() {
       <section className="relative isolate min-h-[32rem] overflow-hidden border-b border-white/10">
         <Image
           src="/images/intervention-panel-simandou.jpg"
-          alt="Thierno Ila Diallo lors d'une intervention professionnelle"
+          alt="Saliou Djan Diaby lors d'une intervention professionnelle"
           fill
           priority
           sizes="100vw"

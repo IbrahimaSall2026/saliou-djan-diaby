@@ -80,13 +80,13 @@ export default function Header() {
           <Image
             className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-white/20 transition duration-300 group-hover:ring-white/50"
             src="/images/profil.jpg"
-            alt="Portrait de Thierno Ila Diallo"
+            alt="Portrait de SALIOU DJAN DIABY"
             width={40}
             height={40}
             priority
           />
           <span className="truncate text-lg font-semibold tracking-wide text-slate-100 transition-colors group-hover:text-white">
-            Thierno Ila Diallo
+            SALIOU DJAN DIABY
           </span>
           </Link>
 
