@@ -79,7 +79,7 @@ export default function Header() {
           >
           <Image
             className="h-10 w-10 shrink-0 rounded-full object-cover object-top ring-1 ring-white/20 transition duration-300 group-hover:ring-white/50"
-            src="/images/emission-saliou-studio.jpg"
+            src="/images/portrait-saliou.jpg"
             alt="Portrait de SALIOU DJAN DIABY"
             width={40}
             height={40}
