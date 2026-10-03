@@ -12,16 +12,11 @@ export default function AProposPage() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_28%]"
+          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-black/40" />
         <div className="relative mx-auto flex min-h-[min(760px,100vh)] max-w-7xl items-end px-6 pb-20 md:px-8 md:pb-28">
           <div className="max-w-4xl">
-            <p className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-blue-300">
-              <span className="h-px w-10 bg-blue-300" aria-hidden="true" />
-              {aProposData.hero.eyebrow}
-            </p>
             <h1 className="max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-8xl">
               {aProposData.hero.title}
             </h1>
@@ -34,18 +29,18 @@ export default function AProposPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-28" aria-labelledby="personal-story-title">
         <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30">
+          <div className="order-1 relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30">
             <Image
               src={aProposData.introduction.image}
               alt={aProposData.introduction.imageAlt}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-[center_32%]"
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/45 to-transparent" />
           </div>
 
-          <div>
+          <div className="order-2">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-300">
               {aProposData.introduction.eyebrow}
             </p>
@@ -87,7 +82,7 @@ export default function AProposPage() {
               alt={aProposData.media.imageAlt}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover object-[center_40%]"
+              className="object-cover object-center"
             />
             <div className="absolute inset-0 bg-zinc-950/60" />
             <div className="relative flex h-full flex-col items-center justify-center gap-4 px-6 text-center">

@@ -1,83 +1,83 @@
 export const aProposData = {
   hero: {
-    eyebrow: "Une voix, une présence, une direction",
+    eyebrow: "Maître de cérémonie · Publicité & Valorisation de marque · Création & Production",
     title: "À propos de Saliou Djan Diaby",
     description:
-      "Maître de cérémonie, formateur en art oratoire et conférencier, j'accompagne les moments où la parole doit rassembler et faire avancer.",
-    image: "/images/profil.jpg",
-    imageAlt: "Portrait de Saliou Djan Diaby",
+      "Sur scène, en tournage publicitaire et dans la valorisation des marques, je mets ma présence et mon expertise au service de messages clairs, de contenus soignés et d’événements mémorables.",
+    image: "/images/mc-hero.jpg",
+    imageAlt: "Saliou Djan Diaby prenant la parole lors d’un événement",
   },
   introduction: {
-    eyebrow: "Mon histoire",
-    title: "Ma passion pour une parole juste et maîtrisée",
+    eyebrow: "Mon parcours",
+    title: "De la scène à la rencontre avec le public",
     paragraphs: [
-      "Mon parcours s'est construit autour de l'art oratoire, de la présence et du sens du détail. J'ai appris à faire de ma voix un outil de transmission, capable de donner du rythme à une idée et de créer un lien sincère avec un public.",
-      "Ma passion pour le protocole m'a naturellement conduite vers le métier de Maîtresse de Cérémonie. Je veille à chaque transition, à chaque prise de parole et à chaque moment pour que l'ensemble reste fluide, élégant et fidèle à l'intention du projet.",
+      "Mon expérience de la prise de parole s’est construite au contact des scènes, des événements et de leurs publics. Chaque contexte m’a appris à écouter, à m’adapter et à faire de la voix un véritable lien entre les personnes et les idées.",
+      "Comme maître de cérémonie, je prépare chaque séquence avec attention : le ton, le rythme, le protocole et les transitions. Mon objectif est de créer un déroulé fluide et chaleureux, fidèle à l’esprit de l’événement.",
     ],
-    image: "/images/profil.jpg",
-    imageAlt: "Saliou Djan Diaby, passionné par l'art oratoire et le protocole",
+    image: "/images/mc-hero.jpg",
+    imageAlt: "Saliou Djan Diaby sur scène, devant plusieurs microphones",
   },
   presentation: {
-    eyebrow: "Présentation & histoire",
-    title: "Donner à chaque parole sa juste portée",
+    eyebrow: "Mon expertise",
+    title: "Une présence attentive, à l’aise sur scène comme au micro",
     lead:
-      "La prise de parole est au cœur de mon parcours. Elle m'a appris qu'une voix ne se résume pas à ce qu'elle dit : elle porte une intention, une énergie et une relation avec celles et ceux qui l'écoutent.",
+      "Maître de cérémonie, conférencier et animateur, je fais de chaque prise de parole une rencontre claire, vivante et pensée pour son public.",
     paragraphs: [
-      "En tant que Maîtresse de Cérémonie, je veille au rythme, au protocole et à la fluidité de chaque séquence. J'accompagne également les marques dans leur valorisation et les projets d'émissions, de la création à la production.",
-      "Mon approche associe exigence et écoute afin que chaque intervention reste fidèle à l'identité du projet et aux personnes qui le portent.",
+      "Sur scène, je guide le programme, présente les intervenants et relie les temps forts avec précision. En conférence et en animation, je m’attache à rendre les échanges accessibles, à maintenir l’attention et à créer une dynamique avec la salle.",
+      "À l’antenne, je mobilise la même écoute et la même préparation pour installer un échange naturel. Quel que soit le format, je veille à respecter le message, le public et l’identité du projet.",
     ],
   },
   media: {
-    image: "/images/profil.jpg",
-    imageAlt: "Aperçu vidéo de Saliou Djan Diaby",
+    image: "/images/emission-plateau-radio.jpg",
+    imageAlt: "Saliou Djan Diaby en animation sur un plateau radio",
     videoUrl: "https://www.youtube.com/embed/votre-video-id",
     buttonLabel: "Lire la vidéo de présentation de Saliou Djan Diaby",
-    caption: "Voir le parcours",
+    caption: "Dans les coulisses d’une émission",
   },
   missionVision: {
-    eyebrow: "Ce qui me guide",
-    title: "Mission & vision",
+    eyebrow: "Ma vision du métier",
+    title: "Faire vivre la parole et rapprocher les publics",
     mission: {
       label: "Ma mission",
-      title: "Faire de la parole un levier de confiance",
+      title: "Donner à chaque événement un fil conducteur",
       description:
-        "Je crée des espaces où les messages sont clairs, les échanges sincères et chaque intervenant pleinement présent. La parole devient alors un outil concret pour transmettre, fédérer et agir.",
+        "Préparer, présenter et animer avec justesse pour que chaque intervenant trouve sa place, que le programme reste fluide et que le public se sente pleinement associé au moment.",
     },
     vision: {
       label: "Ma vision",
-      title: "Des événements qui continuent après le dernier mot",
+      title: "Une parole qui rassemble et laisse une empreinte",
       description:
-        "J'imagine des rencontres qui laissent une énergie, une idée ou un élan. Je mesure l'excellence d'un événement à ce qu'il rend possible une fois les lumières éteintes.",
+        "Je crois aux événements et aux échanges qui rapprochent les personnes, font circuler les idées et donnent envie d’agir. Une prise de parole réussie ne s’arrête pas aux applaudissements : elle continue dans ce qu’elle inspire.",
     },
   },
   values: {
-    eyebrow: "Mes valeurs",
-    title: "Ce qui donne du relief à chaque projet",
+    eyebrow: "Mes engagements",
+    title: "Les repères de chaque prise de parole",
     items: [
       {
         number: "01",
-        title: "Excellence",
+        title: "Préparation",
         description:
-          "Je prépare chaque prise de parole avec exigence pour offrir une expérience précise, élégante et mémorable.",
+          "Je m’approprie le programme, les messages et le contexte pour intervenir avec précision et donner à chaque séquence le bon rythme.",
       },
       {
         number: "02",
         title: "Écoute & adaptation",
         description:
-          "Je prends le temps de comprendre un public, un contexte et une ambition pour construire une présence juste, humaine et efficace.",
+          "Je tiens compte du public, des intervenants et de l’énergie de la salle pour ajuster ma présence et favoriser des échanges naturels.",
       },
       {
         number: "03",
-        title: "Impact",
+        title: "Clarté & impact",
         description:
-          "Je cherche à laisser une trace : clarifier les idées, engager les personnes et ouvrir le mouvement.",
+          "Je porte les messages avec simplicité et conviction afin que les idées soient comprises, partagées et mémorisées.",
       },
     ],
   },
   contact: {
-    eyebrow: "Un projet en tête ?",
-    title: "Faisons de votre prochain rendez-vous un moment qui compte.",
+    eyebrow: "Préparons votre événement",
+    title: "Parlons de votre scène, de votre public et du message à faire vivre.",
     href: "/me-contacter",
-    label: "Me contacter",
+    label: "Échanger sur votre projet",
   },
 } as const;
