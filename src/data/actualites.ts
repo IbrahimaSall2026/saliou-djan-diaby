@@ -38,11 +38,11 @@ export type ActualitesPageData = {
 export const actualites = {
   hero: {
     eyebrow: "Le journal de la parole",
-    title: "Actualités",
-    titleAccent: "&",
-    titleSuffix: "événements",
+    title: "Bonne fête de l'indépendance à notre chère Guinée",
+    titleAccent: "",
+    titleSuffix: "",
     subtitle:
-      "Rencontres, prises de parole et moments forts : découvrez les histoires qui nourrissent une vision engagée de l'événementiel et de la transmission.",
+      "Célébrer la patrie, c'est aussi honorer le travail quotidien, la sueur et l'engagement de chaque citoyen pour bâtir un avenir prospère et uni.",
     image: "/images/actualite-independance-guinee.jpg",
     imageAlt: "Saliou Djan Diaby drapée aux couleurs du drapeau guinéen",
   },
@@ -65,12 +65,12 @@ export const actualites = {
     indexLabel: "02 / En images",
     title: "La parole se vit aussi en mouvement",
     paragraphs: [
-      "Un événement ne se résume pas à un programme. Il se construit dans les regards, les voix et les échanges qui lui donnent son énergie. Chaque détail compte pour créer une expérience sincère, fluide et mémorable.",
+      "Un événement national ne se résume pas à un programme. Il se construit dans les regards, les voix et l'énergie de ceux qui œuvrent pour le pays. Chaque action compte pour faire rayonner la Guinée au travail.",
     ],
     keyPoints: [
-      "Une présence qui donne du rythme à chaque séquence",
-      "Une attention portée au public et à son énergie",
-      "Des messages clairs, incarnés et fédérateurs",
+      "Une présence qui insuffle l'énergie et la dynamique du travail bien fait.",
+      "Un engagement profond pour porter haut les valeurs et l'identité guinéennes.",
+      "Des messages clairs, fédérateurs et tournés vers le développement de notre nation.",
     ],
     mediaType: "video",
     image: "/images/actualite-independance-guinee.jpg",

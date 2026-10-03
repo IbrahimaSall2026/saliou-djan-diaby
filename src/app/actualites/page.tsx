@@ -26,10 +26,10 @@ export default function ActualitesPage() {
               {firstBlock.indexLabel}
             </p>
             <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
-              {firstBlock.title}
+              {hero.title}
             </h1>
             <p className="mt-5 text-sm font-medium text-neutral-200 md:text-base">
-              {firstBlock.date}
+              {hero.subtitle}
             </p>
           </div>
         </div>
