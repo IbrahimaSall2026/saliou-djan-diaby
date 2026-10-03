@@ -29,12 +29,12 @@ export default function Hero() {
 
 				<div className="relative h-[300px] w-full overflow-hidden rounded-3xl border border-neutral-800 shadow-2xl shadow-black/30 sm:h-[400px] lg:h-[580px]">
 					<Image
-						src="/images/emission-saliou-studio.jpg"
+						src="/images/portrait-saliou.jpg"
 						alt="Portrait de Saliou Djan Diaby"
 						fill
 						sizes="(max-width: 768px) 100vw, 448px"
 						priority
-						className="object-cover object-top"
+						className="object-cover object-[center_15%]"
 					/>
 				</div>
 			</div>

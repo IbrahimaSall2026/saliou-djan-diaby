@@ -30,7 +30,7 @@ export default function APropos() {
 
 				<div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30">
 					<Image
-						src="/images/intervention-costume-noir.jpg"
+						src="/images/portrait-saliou.jpg"
 						alt="Saliou Djan Diaby prenant la parole lors d'une intervention"
 						fill
 						sizes="(max-width: 768px) 100vw, 50vw"
