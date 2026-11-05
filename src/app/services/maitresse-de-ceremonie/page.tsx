@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import ServicePage from "@/components/services/ServicePage";
-import { getServiceBySlug } from "@/data/services";
+import { getPublicService } from "@/lib/services";
 
-export default function MaitreDeCeremoniePage() {
-  const service = getServiceBySlug("maitresse-de-ceremonie");
+export default async function MaitreDeCeremoniePage() {
+  const service = await getPublicService("mc");
 
   if (!service) {
     notFound();

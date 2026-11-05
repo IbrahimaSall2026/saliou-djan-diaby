@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import ServicePage from "@/components/services/ServicePage";
-import { getServiceBySlug } from "@/data/services";
+import { getPublicService } from "@/lib/services";
 
-export default function ConferencierPage() {
-  const service = getServiceBySlug("creation-production-emissions");
+export default async function ConferencierPage() {
+  const service = await getPublicService("emission");
 
   if (!service) {
     notFound();

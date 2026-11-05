@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import ServicePage from "@/components/services/ServicePage";
-import { getServiceBySlug } from "@/data/services";
+import { getPublicService } from "@/lib/services";
 
-export default function FormateurEnArtOratoirePage() {
-  const service = getServiceBySlug("publicite-valorisation-marques");
+export default async function FormateurEnArtOratoirePage() {
+  const service = await getPublicService("publicite");
 
   if (!service) {
     notFound();
