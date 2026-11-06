@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Me contacter sur WhatsApp"
       title="Me contacter sur WhatsApp"
-      className="fixed right-4 bottom-[calc(env(safe-area-inset-bottom)+1rem)] z-50 flex h-12 w-12 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition-all duration-300 hover:bg-green-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green-300 sm:right-6 sm:bottom-6 sm:h-14 sm:w-14"
+      className="fixed right-4 bottom-[calc(env(safe-area-inset-bottom)+1rem)] z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-2xl transition-all duration-300 hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:right-6 sm:bottom-6 sm:h-14 sm:w-14"
     >
       <svg
         viewBox="0 0 24 24"

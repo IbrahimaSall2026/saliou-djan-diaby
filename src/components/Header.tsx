@@ -70,7 +70,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-800 bg-slate-950/80 text-white shadow-lg shadow-black/10 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/80 text-white shadow-lg shadow-black/10 backdrop-blur-md">
       <div className="mx-auto w-full max-w-7xl px-6 py-4 md:px-8">
         <div className="flex items-center justify-between md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-8">
           <Link
@@ -85,20 +85,20 @@ export default function Header() {
             height={40}
             priority
           />
-          <span className="truncate text-lg font-semibold tracking-wide text-slate-100 transition-colors group-hover:text-white">
+          <span className="truncate text-lg font-semibold tracking-wide text-zinc-100 transition-colors group-hover:text-white">
             SALIOU DJAN DIABY
           </span>
           </Link>
 
         <nav
           aria-label="Navigation principale"
-          className="hidden items-center justify-center gap-x-5 text-sm font-medium text-slate-300 md:col-start-2 md:flex md:gap-x-7"
+          className="hidden items-center justify-center gap-x-5 text-sm font-medium text-zinc-300 md:col-start-2 md:flex md:gap-x-7"
         >
           {navLinks.slice(0, 1).map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-3 py-2 text-slate-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-full px-3 py-2 text-zinc-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               {link.label}
             </Link>
@@ -107,7 +107,7 @@ export default function Header() {
             <button
               type="button"
               aria-haspopup="true"
-              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-slate-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-zinc-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Services
               <span
@@ -120,7 +120,7 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block rounded-lg px-3 py-3 text-sm text-slate-300 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                    className="block rounded-lg px-3 py-3 text-sm text-zinc-300 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     {link.label}
                   </Link>
@@ -131,7 +131,7 @@ export default function Header() {
             <button
               type="button"
               aria-haspopup="true"
-              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-slate-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-zinc-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Réalisations
               <span
@@ -144,7 +144,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block rounded-lg px-3 py-3 text-sm text-slate-300 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  className="block rounded-lg px-3 py-3 text-sm text-zinc-300 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   {link.label}
                 </Link>
@@ -155,7 +155,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-3 py-2 text-slate-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-full px-3 py-2 text-zinc-300 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               {link.label}
             </Link>
@@ -164,7 +164,7 @@ export default function Header() {
 
         <Link
           href="/contact"
-          className="hidden shrink-0 items-center justify-self-end rounded-full border border-slate-700 bg-transparent px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-slate-200 hover:text-black md:inline-flex md:col-start-3"
+          className="hidden shrink-0 items-center justify-self-end rounded-full border border-zinc-700 bg-transparent px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors duration-200 hover:bg-zinc-200 hover:text-black md:inline-flex md:col-start-3"
         >
           Me contacter
         </Link>
@@ -175,7 +175,7 @@ export default function Header() {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setIsMenuOpen((open) => !open)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-800 text-slate-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-800 text-zinc-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:hidden"
         >
           <span className="sr-only">Menu</span>
           <span className="flex w-5 flex-col gap-1.5" aria-hidden="true">
@@ -204,7 +204,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenus}
-                className="rounded-lg border border-transparent px-3 py-3 text-sm font-medium text-slate-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="rounded-lg border border-transparent px-3 py-3 text-sm font-medium text-zinc-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 {link.label}
               </Link>
@@ -215,7 +215,7 @@ export default function Header() {
                 aria-expanded={isServicesOpen}
                 aria-haspopup="true"
                 onClick={() => setIsServicesOpen((open) => !open)}
-                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-transparent px-3 py-3 text-left text-base font-medium text-slate-300 transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-transparent px-3 py-3 text-left text-base font-medium text-zinc-300 transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Services
                 <span
@@ -226,13 +226,13 @@ export default function Header() {
                 />
               </button>
               {isServicesOpen && (
-                <div className="ml-4 space-y-1 rounded-lg border-l-2 border-cyan-300/40 bg-zinc-900/60 py-2 pl-4 pr-2 shadow-inner shadow-black/10">
+                <div className="ml-4 space-y-1 rounded-lg border-l-2 border-neutral-300/40 bg-zinc-900/60 py-2 pl-4 pr-2 shadow-inner shadow-black/10">
                   {serviceLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={closeMenus}
-                      className="block rounded-lg px-3 py-3.5 text-[0.95rem] leading-5 text-slate-400 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      className="block rounded-lg px-3 py-3.5 text-[0.95rem] leading-5 text-zinc-400 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       {link.label}
                     </Link>
@@ -246,7 +246,7 @@ export default function Header() {
                 aria-expanded={isRealisationsOpen}
                 aria-haspopup="true"
                 onClick={() => setIsRealisationsOpen((open) => !open)}
-                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-transparent px-3 py-3 text-left text-base font-medium text-slate-300 transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-transparent px-3 py-3 text-left text-base font-medium text-zinc-300 transition hover:bg-white/5 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Réalisations
                 <span
@@ -257,13 +257,13 @@ export default function Header() {
                 />
               </button>
               {isRealisationsOpen && (
-                <div className="ml-4 space-y-1 rounded-lg border-l-2 border-cyan-300/40 bg-zinc-900/60 py-2 pl-4 pr-2 shadow-inner shadow-black/10">
+                <div className="ml-4 space-y-1 rounded-lg border-l-2 border-neutral-300/40 bg-zinc-900/60 py-2 pl-4 pr-2 shadow-inner shadow-black/10">
                   {realisationLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={closeMenus}
-                      className="block rounded-lg px-3 py-3.5 text-[0.95rem] leading-5 text-slate-400 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      className="block rounded-lg px-3 py-3.5 text-[0.95rem] leading-5 text-zinc-400 transition-colors duration-200 hover:bg-white/5 hover:text-white focus-visible:bg-white/5 focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       {link.label}
                     </Link>
@@ -276,7 +276,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenus}
-                className="rounded-lg border border-transparent px-3 py-3 text-sm font-medium text-slate-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="rounded-lg border border-transparent px-3 py-3 text-sm font-medium text-zinc-300 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 {link.label}
               </Link>
@@ -284,7 +284,7 @@ export default function Header() {
             <Link
               href="/contact"
               onClick={closeMenus}
-              className="mt-3 inline-flex items-center justify-center rounded-full border border-slate-700 bg-transparent px-5 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-slate-200 hover:text-black"
+              className="mt-3 inline-flex items-center justify-center rounded-full border border-zinc-700 bg-transparent px-5 py-3 text-sm font-semibold text-white transition-colors duration-200 hover:bg-zinc-200 hover:text-black"
             >
               Me contacter
             </Link>

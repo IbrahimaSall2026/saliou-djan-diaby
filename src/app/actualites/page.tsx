@@ -21,8 +21,8 @@ export default function ActualitesPage() {
         />
         <div className="relative mx-auto flex min-h-[42rem] max-w-7xl items-end px-6 pb-14 md:min-h-[46rem] md:px-8 md:pb-20">
           <div className="max-w-3xl">
-            <p className="mb-5 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-cyan-300">
-              <span className="h-px w-10 bg-cyan-300" aria-hidden="true" />
+            <p className="mb-5 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-neutral-300">
+              <span className="h-px w-10 bg-neutral-300" aria-hidden="true" />
               {firstBlock.indexLabel}
             </p>
             <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
@@ -52,8 +52,8 @@ export default function ActualitesPage() {
           </div>
 
           <div className="flex flex-col justify-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
-              {firstBlock.category} · {firstBlock.date}
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-300">
+              {firstBlock.category} Â· {firstBlock.date}
             </p>
             <h2
               id="event-title"
@@ -61,7 +61,7 @@ export default function ActualitesPage() {
             >
               {firstBlock.title}
             </h2>
-            <div className="mt-7 h-px w-16 bg-cyan-300" aria-hidden="true" />
+            <div className="mt-7 h-px w-16 bg-neutral-300" aria-hidden="true" />
             <div className="mt-7 space-y-5 text-base leading-8 text-neutral-300">
               {firstBlock.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
@@ -91,11 +91,11 @@ export default function ActualitesPage() {
                 type="button"
                 aria-label={secondBlock.playAriaLabel}
                 disabled
-                className="flex h-16 w-16 items-center justify-center rounded-full border border-red-300/70 bg-red-600 text-white shadow-xl shadow-red-950/40"
+                className="flex h-16 w-16 items-center justify-center rounded-full border border-white/70 bg-white text-black shadow-xl shadow-neutral-950/40"
               >
                 <span
                   aria-hidden="true"
-                  className="ml-1 h-0 w-0 border-y-[8px] border-l-[12px] border-y-transparent border-l-white"
+                  className="ml-1 h-0 w-0 border-y-[8px] border-l-[12px] border-y-transparent border-l-black"
                 />
               </button>
               <p className="mt-5 text-sm font-medium text-white">{secondBlock.mediaLabel}</p>
@@ -104,7 +104,7 @@ export default function ActualitesPage() {
           </div>
 
           <div className="order-2 lg:col-start-1 lg:row-start-1">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-300">
               {secondBlock.indexLabel}
             </p>
             <h2
@@ -113,7 +113,7 @@ export default function ActualitesPage() {
             >
               {secondBlock.title}
             </h2>
-            <div className="mt-7 h-px w-16 bg-cyan-300" aria-hidden="true" />
+            <div className="mt-7 h-px w-16 bg-neutral-300" aria-hidden="true" />
             <div className="mt-7 space-y-5 text-base leading-8 text-neutral-300">
               {secondBlock.paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
@@ -122,7 +122,7 @@ export default function ActualitesPage() {
             <ul className="mt-8 space-y-4 text-sm text-neutral-300">
               {secondBlock.keyPoints.map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" aria-hidden="true" />
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-neutral-300" aria-hidden="true" />
                   {point}
                 </li>
               ))}

@@ -6,7 +6,7 @@ export default function Hero() {
 		<section className="bg-neutral-950 py-16 md:py-24">
 			<div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
 				<div className="flex flex-col items-start">
-					<p className="hero-badge-animation mb-5 cursor-pointer rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-200 transition duration-300 hover:border-slate-500 hover:bg-slate-900/80 hover:text-white">
+					<p className="hero-badge-animation mb-5 cursor-pointer rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-200 transition duration-300 hover:border-zinc-500 hover:bg-zinc-900/80 hover:text-white">
 						MAÎTRESSE DE CÉRÉMONIE • JOURNALISTE • PRODUCTRICE D&apos;ÉMISSIONS
 					</p>
 					<h1 className="text-4xl font-bold text-white md:text-6xl">
@@ -20,7 +20,7 @@ export default function Hero() {
 					<div className="mt-8 flex w-full justify-center">
 						<Link
 							href="/contact"
-							className="rounded-full bg-blue-600 px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
+							className="rounded-full bg-white px-6 py-3 font-semibold text-black transition-colors duration-300 hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
 						>
 							Me contacter
 						</Link>

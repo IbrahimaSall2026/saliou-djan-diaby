@@ -16,8 +16,8 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,10,10,0.78),rgba(10,10,10,0.35),rgba(10,10,10,0.62))]" />
         <div className="relative mx-auto flex min-h-[34rem] max-w-7xl items-end px-6 pb-16 md:min-h-[42rem] md:px-8 md:pb-24">
           <div className="max-w-3xl">
-            <p className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-blue-300">
-              <span className="h-px w-10 bg-blue-300" aria-hidden="true" />
+            <p className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.28em] text-neutral-300">
+              <span className="h-px w-10 bg-neutral-300" aria-hidden="true" />
               Scène · Publicité · Création & production
             </p>
             <h1 className="max-w-2xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-8xl">
@@ -34,7 +34,7 @@ export default function ContactPage() {
       <section className="px-6 py-20 md:px-8 md:py-28" aria-labelledby="contact-section-title">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[minmax(0,0.78fr)_minmax(30rem,1.22fr)] lg:gap-24">
           <div>
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-blue-300">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-neutral-300">
               Parlons de votre projet
             </p>
             <h2
@@ -56,7 +56,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="mailto:contact@salioudjandiaby.com"
-                  className="mt-2 inline-block text-base text-white transition-colors hover:text-blue-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
+                  className="mt-2 inline-block text-base text-white transition-colors hover:text-neutral-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-300"
                 >
                   contact@salioudjandiaby.com
                 </a>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                     type="text"
                     autoComplete="name"
                     required
-                    className="mt-2 w-full border-b border-white/20 bg-transparent px-0 py-3 text-base text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-blue-300"
+                    className="mt-2 w-full border-b border-white/20 bg-transparent px-0 py-3 text-base text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-neutral-300"
                     placeholder="Votre nom complet"
                   />
                 </div>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     type="email"
                     autoComplete="email"
                     required
-                    className="mt-2 w-full border-b border-white/20 bg-transparent px-0 py-3 text-base text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-blue-300"
+                    className="mt-2 w-full border-b border-white/20 bg-transparent px-0 py-3 text-base text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-neutral-300"
                     placeholder="vous@exemple.com"
                   />
                 </div>
@@ -125,7 +125,7 @@ export default function ContactPage() {
                     name="subject"
                     defaultValue=""
                     required
-                    className="w-full appearance-none border-b border-white/20 bg-neutral-950 px-0 py-3 pr-10 text-base text-white outline-none transition-colors focus:border-blue-300"
+                    className="w-full appearance-none border-b border-white/20 bg-neutral-950 px-0 py-3 pr-10 text-base text-white outline-none transition-colors focus:border-neutral-300"
                   >
                     <option value="" disabled>
                       -- Choisissez le sujet de votre demande --
@@ -151,14 +151,14 @@ export default function ContactPage() {
                   name="message"
                   rows={6}
                   required
-                  className="mt-2 w-full resize-y border-b border-white/20 bg-transparent px-0 py-3 text-base leading-7 text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-blue-300"
+                  className="mt-2 w-full resize-y border-b border-white/20 bg-transparent px-0 py-3 text-base leading-7 text-white outline-none transition-colors placeholder:text-neutral-600 focus:border-neutral-300"
                   placeholder="Présentez votre événement, votre conférence ou votre projet média : objectifs, public, date et format envisagé..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300 sm:w-auto"
+                className="inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition-colors hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto"
               >
                 Envoyer mon message
                 <span aria-hidden="true" className="ml-3 text-lg leading-none">
