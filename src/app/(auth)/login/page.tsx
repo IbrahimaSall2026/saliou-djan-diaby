@@ -10,6 +10,7 @@ export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -24,15 +25,21 @@ export default function LoginPage() {
 
       if (error) {
         setErrorMessage(`La connexion a échoué : ${error.message}`);
-        setIsSubmitting(false);
         return;
       }
 
       router.replace("/admin");
       router.refresh();
     } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
+      const message =
+        error instanceof TypeError &&
+        /failed to fetch|networkerror|load failed/i.test(error.message)
+          ? "Impossible de joindre Supabase. Vérifiez NEXT_PUBLIC_SUPABASE_URL et NEXT_PUBLIC_SUPABASE_ANON_KEY dans les variables d’environnement de Vercel, puis redéployez."
+          : error instanceof Error
+            ? error.message
+            : String(error);
       setErrorMessage(`La connexion a échoué : ${message}`);
+    } finally {
       setIsSubmitting(false);
     }
   }
@@ -108,14 +115,46 @@ export default function LoginPage() {
             <input
               id="password"
               name="password"
-              type="password"
+              type={showPassword ? "text" : "password"}
               autoComplete="current-password"
               required
               value={password}
               onChange={(event) => setPassword(event.target.value)}
-              className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 py-3.5 pl-11 pr-4 text-sm text-white outline-none transition-all placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+              className="w-full rounded-xl border border-slate-700/60 bg-slate-900/60 py-3.5 pl-11 pr-10 text-sm text-white outline-none transition-all placeholder:text-slate-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
               placeholder="Votre mot de passe"
             />
+            <button
+              type="button"
+              onClick={() => setShowPassword((isVisible) => !isVisible)}
+              aria-label={showPassword ? "Masquer le mot de passe" : "Afficher le mot de passe"}
+              aria-pressed={showPassword}
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-slate-400 transition hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-300"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="size-5"
+              >
+                {showPassword ? (
+                  <>
+                    <path d="M3 3l18 18" />
+                    <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8" />
+                    <path d="M9.9 5.2A10.7 10.7 0 0 1 12 5c5.5 0 9 7 9 7a15.7 15.7 0 0 1-3 3.8" />
+                    <path d="M6.2 6.2C3.9 7.7 3 12 3 12s3.5 7 9 7a9.8 9.8 0 0 0 3-.5" />
+                  </>
+                ) : (
+                  <>
+                    <path d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </>
+                )}
+              </svg>
+            </button>
           </div>
         </div>
 
