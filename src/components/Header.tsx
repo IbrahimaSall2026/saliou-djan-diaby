@@ -70,7 +70,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/80 text-white shadow-lg shadow-black/10 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-900/90 text-white shadow-lg shadow-black/10 backdrop-blur-md">
       <div className="mx-auto w-full max-w-7xl px-6 py-4 md:px-8">
         <div className="flex items-center justify-between md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-8">
           <Link
@@ -189,7 +189,7 @@ export default function Header() {
         <div
           id="mobile-navigation"
           aria-hidden={!isMenuOpen}
-          className={`absolute left-0 right-0 top-full max-h-[calc(100dvh-5rem)] overflow-y-auto border-b border-white/10 bg-zinc-950/95 px-6 shadow-2xl shadow-black/40 backdrop-blur-xl transition-all duration-300 ease-out md:hidden ${
+          className={`absolute left-0 right-0 top-full max-h-[calc(100dvh-5rem)] overflow-y-auto border-b border-zinc-800 bg-zinc-900/95 px-6 shadow-2xl shadow-black/40 backdrop-blur-xl transition-all duration-300 ease-out md:hidden ${
             isMenuOpen
               ? "pointer-events-auto translate-y-0 opacity-100"
               : "pointer-events-none -translate-y-2 opacity-0"
