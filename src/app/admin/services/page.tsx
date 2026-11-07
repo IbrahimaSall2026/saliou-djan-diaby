@@ -134,6 +134,33 @@ function ImagePreview({ url }: { url: string }) {
   );
 }
 
+function VideoPreview({ url }: { url: string }) {
+  const [hasError, setHasError] = useState(false);
+
+  return (
+    <div
+      className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-zinc-950/70"
+      aria-live="polite"
+    >
+      {hasError ? (
+        <p className="px-4 py-3 text-sm text-zinc-400">
+          Cette vidéo ne peut pas être chargée.
+        </p>
+      ) : (
+        <video
+          src={url}
+          controls
+          playsInline
+          preload="metadata"
+          aria-label="Aperçu de la vidéo du bloc 2"
+          onError={() => setHasError(true)}
+          className="aspect-video w-full"
+        />
+      )}
+    </div>
+  );
+}
+
 async function fetchServices() {
   const supabase = createClient();
   const { data, error } = await supabase
@@ -330,10 +357,18 @@ export default function AdminServicesPage() {
   }
 
   async function uploadMedia(field: MediaFieldKey, file: File, mediaType: "image" | "video") {
-    if (file.type && !file.type.startsWith(`${mediaType}/`)) {
+    const mimeType = file.type.toLowerCase();
+    const isSupportedType =
+      mimeType.startsWith(`${mediaType}/`) &&
+      !(mediaType === "image" && mimeType === "image/svg+xml");
+
+    if (!isSupportedType) {
       setFeedback({
         type: "error",
-        message: `Veuillez sélectionner un fichier ${mediaType === "image" ? "image" : "vidéo"}.`,
+        message:
+          mediaType === "image" && mimeType === "image/svg+xml"
+            ? "Les images SVG ne sont pas acceptées. Veuillez choisir une image matricielle."
+            : `Veuillez sélectionner un fichier ${mediaType === "image" ? "image" : "vidéo"} dans un format pris en charge.`,
       });
       return;
     }
@@ -353,7 +388,7 @@ export default function AdminServicesPage() {
         .upload(filePath, file, {
           cacheControl: "3600",
           upsert: false,
-          ...(file.type ? { contentType: file.type } : {}),
+          contentType: mimeType,
         });
 
       if (error) {
@@ -366,7 +401,7 @@ export default function AdminServicesPage() {
       updateField(field, publicUrlData.publicUrl);
       setFeedback({
         type: "success",
-        message: `${mediaType === "image" ? "Image" : "Vidéo"} téléversée avec succès.`,
+        message: `${mediaType === "image" ? "Image" : "Vidéo"} téléversée. Vérifiez son aperçu ci-dessous, puis enregistrez le service pour conserver cette modification.`,
       });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
@@ -488,8 +523,8 @@ export default function AdminServicesPage() {
           role={feedback.type === "error" ? "alert" : "status"}
           className={`mb-6 rounded-xl border px-4 py-3 text-sm leading-6 ${
             feedback.type === "error"
-              ? "border-white/20 bg-white/10 text-white"
-              : "border-neutral-700 bg-neutral-900 text-neutral-200"
+              ? "border-red-500/30 bg-red-500/10 text-red-200"
+              : "border-emerald-500/30 bg-emerald-500/10 text-emerald-200"
           }`}
         >
           {feedback.message}
@@ -609,7 +644,7 @@ export default function AdminServicesPage() {
                           rel="noreferrer"
                           className="break-all text-neutral-300 underline underline-offset-2 hover:text-neutral-200"
                         >
-                          Fichier téléversé · Voir le fichier
+                          Média associé · Voir le fichier
                         </a>
                       ) : (
                         `Formats ${field.mediaType === "image" ? "image" : "vidéo"} acceptés`
@@ -618,6 +653,9 @@ export default function AdminServicesPage() {
                   )}
                   {field.key === "block1_image_url" && imagePreviewUrl && (
                     <ImagePreview key={imagePreviewUrl} url={imagePreviewUrl} />
+                  )}
+                  {field.key === "block2_video_url" && fields.block2_video_url && (
+                    <VideoPreview key={fields.block2_video_url} url={fields.block2_video_url} />
                   )}
                 </div>
               ))}
