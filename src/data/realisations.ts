@@ -43,7 +43,7 @@ export const realisations = [
     category: "Cérémonie animée",
     description: "Sur scène, chaque cérémonie devient un rendez-vous vivant : les invités sont guidés, les prises de parole s'enchaînent et les temps forts trouvent leur place.",
     detailedDescription:
-      "Des événements institutionnels aux galas, notamment à l'Hôtel Kaloum, Saliou s'appuie sur son expérience de terrain pour accompagner le programme avec précision et créer une expérience fluide pour le public.",
+      "De la maîtrise de cérémonie aux galas, Saliou orchestre les prises de parole et les temps forts avec précision. Son expérience de terrain contribue à un programme fluide, vivant et pensé pour le public.",
     image: "/images/mc-hero.jpg",
     imageAlt: "Saliou Djan Diaby lors d'une prise de parole sur scène, micro en main",
     heroImagePositionMobile: "36% center",
@@ -57,7 +57,7 @@ export const realisations = [
         eyebrow: "Au pupitre, au cœur de l'action",
         title: "Guider les temps forts avec justesse",
         paragraphs: [
-          "Lors des cérémonies animées à l'Hôtel Kaloum et sur d'autres scènes événementielles, Saliou accompagne concrètement le déroulé : annonces, entrées, interventions et transitions se succèdent dans le respect du programme.",
+          "Lors de cérémonies et d'événements professionnels, Saliou assure la maîtrise du déroulé : annonces, présentations, interventions et transitions s'enchaînent dans le respect du programme.",
           "La lecture de la salle et l'attention portée aux intervenants permettent de maintenir le lien avec le public, tout en laissant à chaque moment sa tonalité propre.",
         ],
         mediaType: "image",
