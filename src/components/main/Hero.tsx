@@ -33,7 +33,7 @@ export default function Hero() {
 					</div>
 				</div>
 
-				<div className="relative mx-auto h-[360px] w-full max-w-xl sm:h-[480px] lg:h-[580px]">
+				<div className="relative mx-auto aspect-[2/3] w-full max-w-sm">
 					<div
 						aria-hidden="true"
 						className="absolute inset-4 rounded-[2rem] bg-gradient-to-br from-blue-500/30 to-indigo-400/10 blur-2xl"
@@ -43,9 +43,9 @@ export default function Hero() {
 							src="/images/hero-profile.jpg"
 							alt="Saliou Djan Diaby lors d’une rencontre professionnelle"
 							fill
-							sizes="(max-width: 768px) 100vw, 576px"
+							sizes="(max-width: 768px) 100vw, 384px"
 							preload
-							className="object-cover object-[center_35%]"
+							className="object-cover object-center"
 						/>
 						<div
 							aria-hidden="true"
