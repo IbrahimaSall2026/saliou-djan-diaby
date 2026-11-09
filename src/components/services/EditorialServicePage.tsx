@@ -12,54 +12,50 @@ export default function EditorialServicePage({
 }: EditorialServicePageProps) {
   return (
     <main className="min-h-screen bg-blue-950 text-white">
-      <section className="overflow-hidden border-b border-blue-800 bg-gradient-to-br from-blue-950 via-blue-950 to-indigo-950">
-        <div className="mx-auto grid w-full max-w-7xl items-center md:grid-cols-2">
-          <div className="relative order-1 aspect-[4/3] w-full overflow-hidden bg-blue-950 sm:aspect-video md:order-2 md:aspect-auto md:min-h-[min(680px,calc(100vh-5rem))]">
-            <Image
-              src={service.image}
-              alt={service.imageAlt}
-              fill
-              fetchPriority="high"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="hero-background-image object-contain"
-              style={
-                {
-                  "--hero-mobile-position": service.heroImagePositionMobile ?? "center",
-                  "--hero-desktop-position": service.heroImagePosition ?? "center",
-                } as CSSProperties
-              }
-            />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-blue-950/35 to-transparent md:bg-gradient-to-l md:from-blue-950/25 md:to-transparent" />
-          </div>
-
-          <div className="order-2 px-5 py-9 sm:px-8 sm:py-12 md:order-1 md:px-10 md:py-16 lg:px-12">
-            <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-200">
-                {service.heroEyebrow}
-              </p>
-              <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-white sm:mt-5 sm:text-4xl md:text-5xl lg:text-6xl">
-                {service.title}
-              </h1>
-              <p className="mt-4 text-base leading-7 text-blue-50 sm:mt-6 sm:text-lg sm:leading-8">
-                {service.shortDescription}
-              </p>
-              <p className="mt-3 text-sm leading-6 text-blue-100 sm:mt-5 sm:text-base sm:leading-7">
-                {service.detailedDescription}
-              </p>
-              <div className="mt-6 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
-                <Link
-                  href="/contact"
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-blue-600 px-5 py-3 text-center text-sm font-semibold leading-5 text-white transition-colors hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto sm:px-6 sm:text-base"
-                >
-                  {service.ctaLabel}
-                </Link>
-                <Link
-                  href="#service-details"
-                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-blue-200/50 px-5 py-3 text-center text-sm font-semibold leading-5 text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto sm:px-6 sm:text-base"
-                >
-                  {service.secondaryCtaLabel}
-                </Link>
-              </div>
+      <section className="relative isolate min-h-[min(760px,calc(100vh-5rem))] overflow-hidden border-b border-blue-800 bg-blue-950">
+        <Image
+          src={service.image}
+          alt={service.imageAlt}
+          fill
+          fetchPriority="high"
+          sizes="100vw"
+          className="hero-background-image object-cover"
+          style={
+            {
+              "--hero-mobile-position": service.heroImagePositionMobile ?? service.heroImagePosition ?? "center",
+              "--hero-desktop-position": service.heroImagePosition ?? "center",
+            } as CSSProperties
+          }
+        />
+        <div className="absolute inset-0 bg-blue-950/15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/10 via-blue-950/30 to-blue-950/90 md:bg-gradient-to-r md:from-blue-950/90 md:via-blue-950/65 md:to-blue-950/25" />
+        <div className="relative mx-auto flex min-h-[min(760px,calc(100vh-5rem))] w-full max-w-7xl items-end px-5 pb-10 pt-16 sm:px-8 sm:pb-14 sm:pt-20 md:items-center md:px-8 md:py-20">
+          <div className="w-full max-w-3xl rounded-2xl border border-white/10 bg-blue-950/55 p-5 shadow-2xl shadow-black/20 sm:p-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-200">
+              {service.heroEyebrow}
+            </p>
+            <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-white sm:mt-5 sm:text-4xl md:text-5xl lg:text-6xl">
+              {service.title}
+            </h1>
+            <p className="mt-4 text-base leading-7 text-blue-50 sm:mt-6 sm:text-lg sm:leading-8">
+              {service.shortDescription}
+            </p>
+            <p className="mt-3 text-sm leading-6 text-blue-100 sm:mt-5 sm:text-base sm:leading-7">
+              {service.detailedDescription}
+            </p>
+            <div className="mt-6 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-blue-600 px-5 py-3 text-center text-sm font-semibold leading-5 text-white transition-colors hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto sm:px-6 sm:text-base"
+              >
+                {service.ctaLabel}
+              </Link>
+              <Link
+                href="#service-details"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-blue-200/50 px-5 py-3 text-center text-sm font-semibold leading-5 text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto sm:px-6 sm:text-base"
+              >
+                {service.secondaryCtaLabel}
+              </Link>
             </div>
           </div>
         </div>
