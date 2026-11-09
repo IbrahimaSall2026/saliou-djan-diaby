@@ -3,39 +3,49 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="bg-neutral-950 py-16 md:py-24">
-			<div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16">
+		<section className="bg-blue-950 py-16 md:py-24">
+			<div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
 				<div className="flex flex-col items-start">
-					<p className="hero-badge-animation mb-5 cursor-pointer rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-200 transition duration-300 hover:border-zinc-500 hover:bg-zinc-900/80 hover:text-white">
+					<p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-blue-200 sm:text-sm">
 						MAÎTRESSE DE CÉRÉMONIE • JOURNALISTE • PRODUCTRICE D&apos;ÉMISSIONS
 					</p>
-					<h1 className="text-4xl font-bold text-white md:text-6xl">
+					<h1 className="max-w-2xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
 						Saliou Djan Diaby
 					</h1>
-					<p className="mt-6 max-w-xl text-lg leading-8 text-neutral-400">
+					<p className="mt-6 max-w-xl text-base leading-8 text-blue-100 sm:text-lg">
 						Sublimez vos événements et captivez votre public. J&apos;allie
 						maîtrise de la scène, rigueur journalistique et sens du protocole
 						pour transformer chaque intervention en un moment mémorable.
 					</p>
-					<div className="mt-8 flex w-full justify-center">
+					<div className="mt-8">
 						<Link
 							href="/contact"
-							className="rounded-full bg-white px-6 py-3 font-semibold text-black transition-colors duration-300 hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+							className="inline-flex items-center rounded-full bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-950/30 transition-colors duration-300 hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
 						>
 							Me contacter
 						</Link>
 					</div>
 				</div>
 
-				<div className="relative h-[300px] w-full overflow-hidden rounded-3xl border border-neutral-800 shadow-2xl shadow-black/30 sm:h-[400px] lg:h-[580px]">
-					<Image
-						src="/images/portrait-saliou.jpg"
-						alt="Portrait de Saliou Djan Diaby"
-						fill
-						sizes="(max-width: 768px) 100vw, 448px"
-						priority
-						className="object-cover object-[center_15%]"
+				<div className="relative mx-auto h-[360px] w-full max-w-xl sm:h-[480px] lg:h-[580px]">
+					<div
+						aria-hidden="true"
+						className="absolute inset-4 rounded-[2rem] bg-gradient-to-br from-blue-500/30 to-indigo-400/10 blur-2xl"
 					/>
+					<div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-blue-300/20 bg-gradient-to-br from-blue-800 to-indigo-950 shadow-2xl shadow-black/30">
+						<Image
+							src="/images/portrait-saliou.jpg"
+							alt="Portrait de Saliou Djan Diaby en studio radio"
+							fill
+							sizes="(max-width: 768px) 100vw, 576px"
+							preload
+							className="object-cover object-[center_35%]"
+						/>
+						<div
+							aria-hidden="true"
+							className="absolute inset-0 bg-gradient-to-t from-blue-950/30 via-transparent to-blue-950/10"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>

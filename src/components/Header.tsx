@@ -23,6 +23,12 @@ const realisationLinks = [
   { href: "/realisations/emission-produite", label: "Émission produite" },
 ] as const;
 
+const desktopNavItemClassName =
+  "inline-flex min-h-10 items-center rounded-lg border border-transparent px-3 py-2 text-sm font-semibold text-zinc-900 transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 active:bg-zinc-200";
+
+const mobileNavItemClassName =
+  "flex min-h-12 w-full items-center rounded-lg border border-transparent px-3 py-3 text-base font-semibold text-zinc-900 transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 active:bg-zinc-200";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -98,7 +104,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-3 py-2 text-zinc-900 transition-colors hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+              className={desktopNavItemClassName}
             >
               {link.label}
             </Link>
@@ -107,7 +113,7 @@ export default function Header() {
             <button
               type="button"
               aria-haspopup="true"
-              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-zinc-900 transition-colors hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+              className={`${desktopNavItemClassName} gap-1.5`}
             >
               Services
               <span
@@ -131,7 +137,7 @@ export default function Header() {
             <button
               type="button"
               aria-haspopup="true"
-              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-zinc-900 transition-colors hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+              className={`${desktopNavItemClassName} gap-1.5`}
             >
               Réalisations
               <span
@@ -155,7 +161,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-3 py-2 text-zinc-900 transition-colors hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+              className={desktopNavItemClassName}
             >
               {link.label}
             </Link>
@@ -204,7 +210,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenus}
-                className="rounded-lg border border-transparent px-3 py-3 text-sm font-medium text-zinc-900 transition hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+                className={mobileNavItemClassName}
               >
                 {link.label}
               </Link>
@@ -214,8 +220,11 @@ export default function Header() {
                 type="button"
                 aria-expanded={isServicesOpen}
                 aria-haspopup="true"
+                aria-controls="mobile-services-submenu"
                 onClick={() => setIsServicesOpen((open) => !open)}
-                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-transparent px-3 py-3 text-left text-base font-medium text-zinc-900 transition hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+                className={`${mobileNavItemClassName} justify-between text-left ${
+                  isServicesOpen ? "bg-zinc-100" : ""
+                }`}
               >
                 Services
                 <span
@@ -225,28 +234,40 @@ export default function Header() {
                   }`}
                 />
               </button>
-              {isServicesOpen && (
-                <div className="ml-4 space-y-1 rounded-lg border-l-2 border-zinc-300 bg-zinc-50 py-2 pl-4 pr-2">
+              <div
+                id="mobile-services-submenu"
+                aria-hidden={!isServicesOpen}
+                inert={!isServicesOpen}
+                className={`grid transition-all duration-300 ease-in-out ${
+                  isServicesOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
+                <div className="min-h-0 overflow-hidden">
+                  <div className="ml-3 mt-1 space-y-1 rounded-lg border border-zinc-200 bg-zinc-50 p-2">
                   {serviceLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={closeMenus}
-                      className="block rounded-lg px-3 py-3.5 text-[0.95rem] leading-5 text-zinc-900 transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:bg-zinc-100 focus-visible:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+                      className="block rounded-md px-3 py-3 text-sm font-medium leading-5 text-zinc-700 transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:bg-zinc-100 focus-visible:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 active:bg-zinc-200 active:text-zinc-900"
                     >
                       {link.label}
                     </Link>
                   ))}
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
             <div ref={mobileRealisationsMenuRef}>
               <button
                 type="button"
                 aria-expanded={isRealisationsOpen}
                 aria-haspopup="true"
+                aria-controls="mobile-realisations-submenu"
                 onClick={() => setIsRealisationsOpen((open) => !open)}
-                className="flex min-h-12 w-full items-center justify-between rounded-lg border border-transparent px-3 py-3 text-left text-base font-medium text-zinc-900 transition hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+                className={`${mobileNavItemClassName} justify-between text-left ${
+                  isRealisationsOpen ? "bg-zinc-100" : ""
+                }`}
               >
                 Réalisations
                 <span
@@ -256,27 +277,36 @@ export default function Header() {
                   }`}
                 />
               </button>
-              {isRealisationsOpen && (
-                <div className="ml-4 space-y-1 rounded-lg border-l-2 border-zinc-300 bg-zinc-50 py-2 pl-4 pr-2">
+              <div
+                id="mobile-realisations-submenu"
+                aria-hidden={!isRealisationsOpen}
+                inert={!isRealisationsOpen}
+                className={`grid transition-all duration-300 ease-in-out ${
+                  isRealisationsOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
+                <div className="min-h-0 overflow-hidden">
+                  <div className="ml-3 mt-1 space-y-1 rounded-lg border border-zinc-200 bg-zinc-50 p-2">
                   {realisationLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       onClick={closeMenus}
-                      className="block rounded-lg px-3 py-3.5 text-[0.95rem] leading-5 text-zinc-900 transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:bg-zinc-100 focus-visible:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+                      className="block rounded-md px-3 py-3 text-sm font-medium leading-5 text-zinc-700 transition-colors duration-200 hover:bg-zinc-100 hover:text-zinc-900 focus-visible:bg-zinc-100 focus-visible:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 active:bg-zinc-200 active:text-zinc-900"
                     >
                       {link.label}
                     </Link>
                   ))}
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
             {navLinks.slice(2).map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={closeMenus}
-                className="rounded-lg border border-transparent px-3 py-3 text-sm font-medium text-zinc-900 transition hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900"
+                className={mobileNavItemClassName}
               >
                 {link.label}
               </Link>

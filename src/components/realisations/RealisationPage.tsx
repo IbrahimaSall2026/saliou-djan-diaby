@@ -15,8 +15,8 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
   ].includes(realisation.slug);
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
-      <section className="relative isolate min-h-[min(760px,100vh)] overflow-hidden border-b border-white/10 bg-zinc-950">
+    <main className="min-h-screen bg-blue-950 text-white">
+      <section className="relative isolate min-h-[min(760px,100vh)] overflow-hidden border-b border-white/10 bg-blue-950">
         <Image
           src={realisation.image}
           alt={realisation.imageAlt}
@@ -30,23 +30,22 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
               realisation.heroImagePosition === "object-top" ? "center top" : "center",
           } as CSSProperties}
         />
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
         <div className="relative mx-auto flex min-h-[min(760px,100vh)] w-full max-w-7xl items-center px-4 py-24 sm:px-6 md:px-8 md:py-32">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-300">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white">
               {realisation.heroEyebrow}
             </p>
-            <span className="mt-5 inline-flex rounded-full border border-neutral-300/30 bg-neutral-950/60 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-neutral-200">
+            <span className="mt-5 inline-flex rounded-full border border-neutral-300/30 bg-blue-950/60 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-white">
               {realisation.category}
             </span>
             <h1 className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
               {realisation.title}
             </h1>
-            <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-200 sm:text-lg sm:leading-8 md:text-xl">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-white sm:text-lg sm:leading-8 md:text-xl">
               {realisation.description}
             </p>
-            <p className="mt-4 max-w-2xl text-sm leading-7 text-zinc-300 sm:text-base">
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-white sm:text-base">
               {realisation.detailedDescription}
             </p>
             <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -84,10 +83,10 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
           {realisation.sections.map((section, index) => (
             <article
               key={section.title}
-              className="grid min-w-0 items-center gap-8 border-t border-white/10 pt-10 sm:gap-10 sm:pt-12 md:grid-cols-2 md:gap-16 md:pt-16"
+              className="grid min-w-0 items-center gap-8 border-t border-white/10 bg-blue-950 pt-10 sm:gap-10 sm:pt-12 md:grid-cols-2 md:gap-16 md:pt-16"
             >
               {section.mediaType === "video" ? (
-                <div className="order-1 relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 md:order-2">
+                <div className="order-1 relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 bg-blue-900 shadow-2xl shadow-black/30 md:order-2">
                   <Image
                     src={section.image}
                     alt={section.imageAlt}
@@ -95,7 +94,7 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className={`object-cover ${section.imagePosition ?? "object-center"}`}
                   />
-                  <div className="absolute inset-0 bg-zinc-950/60" />
+                  <div className="absolute inset-0 bg-blue-950/60" />
                   <div className="relative flex h-full flex-col items-center justify-center gap-4 px-6 text-center">
                     <button
                       type="button"
@@ -115,7 +114,7 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
                   </div>
                 </div>
               ) : (
-                <div className={`${prioritizeMediaOnMobile ? "order-1" : ""} relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900 shadow-2xl shadow-black/30 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}>
+                <div className={`${prioritizeMediaOnMobile ? "order-1" : ""} relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-blue-900 shadow-2xl shadow-black/30 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}>
                   <Image
                     src={section.image}
                     alt={section.imageAlt}
@@ -123,7 +122,7 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className={`object-cover ${section.imagePosition ?? "object-center"}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/55 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/55 to-transparent" />
                 </div>
               )}
 
