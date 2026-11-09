@@ -24,12 +24,6 @@ export default function Hero() {
 						>
 							Me contacter
 						</Link>
-						<Link
-							href="/realisations"
-							className="inline-flex items-center rounded-full border border-blue-200/50 px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-						>
-							Voir mes réalisations
-						</Link>
 					</div>
 				</div>
 
