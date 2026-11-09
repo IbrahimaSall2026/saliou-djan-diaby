@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="bg-blue-950 py-16 md:py-24">
-			<div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-				<div className="flex flex-col items-start">
+		<section className="bg-blue-950 px-6 py-16 md:px-8 md:py-24">
+			<div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
+				<div className="flex flex-col items-start justify-center rounded-[2rem] border border-blue-800 bg-gradient-to-br from-blue-900 to-indigo-950 p-7 shadow-2xl shadow-black/20 sm:p-10 lg:p-12">
 					<p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-blue-200 sm:text-sm">
 						MAÎTRESSE DE CÉRÉMONIE • JOURNALISTE • PRODUCTRICE D&apos;ÉMISSIONS
 					</p>
@@ -33,25 +33,16 @@ export default function Hero() {
 					</div>
 				</div>
 
-				<div className="relative mx-auto aspect-[2/3] w-full max-w-sm">
-					<div
-						aria-hidden="true"
-						className="absolute inset-4 rounded-[2rem] bg-gradient-to-br from-blue-500/30 to-indigo-400/10 blur-2xl"
+				<div className="mx-auto w-full max-w-md overflow-hidden rounded-[2rem] border border-blue-300/20 bg-blue-900 shadow-2xl shadow-black/30">
+					<Image
+						src="/images/hero-profile.jpg"
+						alt="Saliou Djan Diaby lors d’une rencontre professionnelle"
+						width={720}
+						height={1080}
+						sizes="(max-width: 1024px) 100vw, 50vw"
+						preload
+						className="h-auto w-full object-contain"
 					/>
-					<div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-blue-300/20 bg-gradient-to-br from-blue-800 to-indigo-950 shadow-2xl shadow-black/30">
-						<Image
-							src="/images/hero-profile.jpg"
-							alt="Saliou Djan Diaby lors d’une rencontre professionnelle"
-							fill
-							sizes="(max-width: 768px) 100vw, 384px"
-							preload
-							className="object-cover object-center"
-						/>
-						<div
-							aria-hidden="true"
-							className="absolute inset-0 bg-gradient-to-t from-blue-950/30 via-transparent to-blue-950/10"
-						/>
-					</div>
 				</div>
 			</div>
 		</section>
