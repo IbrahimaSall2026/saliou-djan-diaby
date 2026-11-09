@@ -25,8 +25,9 @@ export default function RealisationsPage() {
               Réalisations
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-8 text-zinc-200 md:text-lg">
-              Découvrez des événements, des formations et des interventions où
-              la parole devient une expérience claire, vivante et utile.
+              Découvrez des événements, des productions médiatiques et des
+              interventions où la parole devient une expérience claire, vivante
+              et utile.
             </p>
           </div>
         </div>
