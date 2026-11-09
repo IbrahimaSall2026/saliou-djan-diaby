@@ -6,12 +6,12 @@ export default function RealisationsPage() {
     <main className="flex-1 overflow-hidden bg-zinc-950 text-white">
       <section className="relative isolate min-h-[32rem] overflow-hidden border-b border-white/10">
         <Image
-          src="/images/hero-profile.jpg"
+          src="/images/mc-hero.jpg"
           alt="Saliou Djan Diaby lors d'une intervention professionnelle"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[88%_center] md:object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/15 to-transparent" />
