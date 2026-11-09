@@ -65,7 +65,7 @@ export default function RealisationCarousel({
                 href={`/realisations/${realisation.slug}`}
                 tabIndex={isActive ? 0 : -1}
                 aria-label={`Découvrir : ${realisation.title}`}
-                className="group relative min-h-[300px] overflow-hidden bg-blue-900 focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-white md:min-h-full"
+                className="group relative min-h-[300px] overflow-hidden bg-blue-950 focus-visible:outline-2 focus-visible:outline-inset focus-visible:outline-white md:min-h-full"
               >
                 <Image
                   src={realisation.image}
@@ -73,7 +73,7 @@ export default function RealisationCarousel({
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   preload={index === 0}
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03] motion-reduce:transition-none"
+                  className="object-contain"
                 />
                 <span className="absolute left-5 top-5 rounded-full border border-white/20 bg-blue-950/90 px-3 py-1.5 text-xs font-medium text-white shadow-sm backdrop-blur-sm">
                   {realisation.category}
