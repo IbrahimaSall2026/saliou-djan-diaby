@@ -4,7 +4,7 @@ import { aProposData } from "@/data/a-propos";
 
 export default function AProposPage() {
   return (
-    <main className="flex-1 overflow-hidden bg-slate-900 text-white">
+    <main className="flex-1 overflow-hidden bg-blue-950 text-white">
       <section className="relative isolate min-h-[min(760px,100vh)] overflow-hidden border-b border-blue-800">
         <Image
           src={aProposData.hero.image}
