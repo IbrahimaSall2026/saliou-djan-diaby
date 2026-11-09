@@ -144,10 +144,10 @@ export default function EditorialServicePage({
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-6 md:flex-row md:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-200">
-              Maîtresse de cérémonie
+              {service.title}
             </p>
             <h2 className="mt-3 max-w-2xl text-2xl font-semibold tracking-tight text-white sm:text-3xl">
-              Donnons le bon rythme à votre événement.
+              Parlons de votre projet et du message que vous souhaitez faire rayonner.
             </h2>
           </div>
           <Link

@@ -1,13 +1,13 @@
 import { notFound } from "next/navigation";
-import ServicePage from "@/components/services/ServicePage";
-import { getPublicService } from "@/lib/services";
+import EditorialServicePage from "@/components/services/EditorialServicePage";
+import { getServiceBySlug } from "@/data/services";
 
-export default async function PubliciteValorisationMarquesPage() {
-  const service = await getPublicService("publicite");
+export default function PubliciteValorisationMarquesPage() {
+  const service = getServiceBySlug("publicite-valorisation-marques");
 
   if (!service) {
     notFound();
   }
 
-  return <ServicePage service={service} />;
+  return <EditorialServicePage service={service} />;
 }
