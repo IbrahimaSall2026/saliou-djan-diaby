@@ -42,12 +42,14 @@ export default function EditorialServicePage({
               >
                 {service.ctaLabel}
               </Link>
-              <Link
-                href="#service-details"
-                className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-blue-200/50 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto"
-              >
-                {service.secondaryCtaLabel}
-              </Link>
+              {service.secondaryCtaLabel && (
+                <Link
+                  href="#service-details"
+                  className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-blue-200/50 px-6 py-3 text-center font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto"
+                >
+                  {service.secondaryCtaLabel}
+                </Link>
+              )}
             </div>
           </div>
         </div>

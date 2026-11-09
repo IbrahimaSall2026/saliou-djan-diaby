@@ -28,7 +28,7 @@ export type Realisation = {
   heroImagePositionMobile?: string;
   heroEyebrow: string;
   ctaLabel: string;
-  secondaryCtaLabel: string;
+  secondaryCtaLabel?: string;
   sectionEyebrow: string;
   sectionTitle: string;
   sections: readonly RealisationSection[];
@@ -49,7 +49,6 @@ export const realisations = [
     heroImagePositionMobile: "36% center",
     heroEyebrow: "Réalisations",
     ctaLabel: "Organiser votre cérémonie",
-    secondaryCtaLabel: "Découvrir le savoir-faire",
     sectionEyebrow: "Des cérémonies vécues sur le terrain",
     sectionTitle: "Des prises de parole qui font avancer l'événement",
     sections: [

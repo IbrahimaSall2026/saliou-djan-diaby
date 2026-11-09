@@ -22,7 +22,7 @@ export type Service = {
   heroImagePositionMobile?: string;
   heroEyebrow: string;
   ctaLabel: string;
-  secondaryCtaLabel: string;
+  secondaryCtaLabel?: string;
   sectionEyebrow: string;
   sectionTitle: string;
   sections: readonly ServiceSection[];
@@ -43,7 +43,6 @@ export const services = [
     heroImagePositionMobile: "36% center",
     heroEyebrow: "Une présence qui donne le ton",
     ctaLabel: "Parlons de votre événement",
-    secondaryCtaLabel: "Découvrir le savoir-faire",
     sectionEyebrow: "Maîtrise de scène et sens du protocole",
     sectionTitle: "Le soin du détail, l'énergie du direct",
     sections: [
