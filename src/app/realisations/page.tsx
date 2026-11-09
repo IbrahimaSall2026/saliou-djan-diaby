@@ -6,7 +6,7 @@ export default function RealisationsPage() {
     <main className="flex-1 overflow-hidden bg-zinc-950 text-white">
       <section className="relative isolate min-h-[32rem] overflow-hidden border-b border-white/10">
         <Image
-          src="/images/intervention-panel-simandou.jpg"
+          src="/images/hero-profile.jpg"
           alt="Saliou Djan Diaby lors d'une intervention professionnelle"
           fill
           priority
