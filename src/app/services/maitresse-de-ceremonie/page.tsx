@@ -1,13 +1,13 @@
 import { notFound } from "next/navigation";
-import ServicePage from "@/components/services/ServicePage";
-import { getPublicService } from "@/lib/services";
+import EditorialServicePage from "@/components/services/EditorialServicePage";
+import { getServiceBySlug } from "@/data/services";
 
-export default async function MaitreDeCeremoniePage() {
-  const service = await getPublicService("mc");
+export default function MaitreDeCeremoniePage() {
+  const service = getServiceBySlug("maitresse-de-ceremonie");
 
   if (!service) {
     notFound();
   }
 
-  return <ServicePage service={service} />;
+  return <EditorialServicePage service={service} />;
 }
