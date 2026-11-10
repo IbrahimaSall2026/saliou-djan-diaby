@@ -16,7 +16,7 @@ const shortcuts = [
   {
     href: "/admin/realisations",
     label: "Réalisations",
-    description: "Accéder à la rubrique des réalisations.",
+    description: "Gérer les contenus et les médias des réalisations.",
     icon: (
       <>
         <rect x="3.5" y="4.5" width="17" height="15" rx="2" />
