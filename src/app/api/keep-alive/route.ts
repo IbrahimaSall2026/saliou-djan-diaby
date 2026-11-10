@@ -1,6 +1,14 @@
 import { createClient } from "@supabase/supabase-js";
 
 const requestTimeoutMs = 8_000;
+const responseHeaders = { "Cache-Control": "no-store" };
+
+function unavailableResponse() {
+  return Response.json(
+    { success: false, status: "degraded", error: "Supabase est temporairement indisponible." },
+    { headers: responseHeaders },
+  );
+}
 
 export async function GET() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
@@ -9,8 +17,8 @@ export async function GET() {
   if (!supabaseUrl || !supabaseAnonKey) {
     console.error("La vérification keep-alive échoue : configuration Supabase manquante.");
     return Response.json(
-      { success: false, error: "Configuration Supabase indisponible." },
-      { status: 503, headers: { "Cache-Control": "no-store" } },
+      { success: false, status: "degraded", error: "Configuration Supabase indisponible." },
+      { headers: responseHeaders },
     );
   }
 
@@ -28,21 +36,15 @@ export async function GET() {
 
     if (error) {
       console.error("La vérification de disponibilité Supabase a échoué:", error);
-      return Response.json(
-        { success: false, error: "Supabase est temporairement indisponible." },
-        { status: 503, headers: { "Cache-Control": "no-store" } },
-      );
+      return unavailableResponse();
     }
 
     return Response.json(
-      { success: true },
-      { headers: { "Cache-Control": "no-store" } },
+      { success: true, status: "ok" },
+      { headers: responseHeaders },
     );
   } catch (error) {
     console.error("La vérification keep-alive a échoué:", error);
-    return Response.json(
-      { success: false, error: "Supabase est temporairement indisponible." },
-      { status: 503, headers: { "Cache-Control": "no-store" } },
-    );
+    return unavailableResponse();
   }
 }
