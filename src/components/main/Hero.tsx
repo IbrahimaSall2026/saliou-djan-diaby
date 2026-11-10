@@ -9,7 +9,7 @@ export default function Hero() {
 					<p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-blue-200 sm:text-sm">
 						MAÎTRESSE DE CÉRÉMONIE • JOURNALISTE • PRODUCTRICE D&apos;ÉMISSIONS
 					</p>
-					<h1 className="hero-copy-enter max-w-2xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+					<h1 className="hero-copy-enter max-w-[14ch] text-balance text-3xl font-bold leading-[1.08] tracking-tight text-white sm:max-w-[15ch] sm:text-4xl md:max-w-[14ch] md:text-5xl lg:text-[3.2rem]">
 						Bienvenue, je suis Saliou Djan Diaby
 					</h1>
 					<p className="hero-copy-enter hero-copy-enter-delay-1 mt-6 max-w-xl text-base leading-8 text-blue-100 sm:text-lg">
