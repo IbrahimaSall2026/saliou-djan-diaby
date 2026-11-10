@@ -4,9 +4,9 @@ import Link from "next/link";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Services | Saliou Djan Diaby",
+  title: "Mes services | Saliou Djan Diaby",
   description:
-    "Découvrez les services de Saliou Djan Diaby en maîtrise de cérémonie, valorisation de marques et production d'émissions.",
+    "Je vous accompagne en maîtrise de cérémonie, valorisation de marques et création et production d'émissions.",
 };
 
 export default function ServicesPage() {
@@ -17,13 +17,12 @@ export default function ServicesPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-200">
             Savoir-faire &amp; accompagnement
           </p>
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-7xl">
-            Des services pour faire vivre vos projets
+          <h1 className="page-title-enter mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-7xl">
+            Mes services pour faire vivre vos projets
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-8 text-blue-100 sm:text-lg">
-            De la scène aux plateaux de production, découvrez les expertises de
-            Saliou Djan Diaby et trouvez l&apos;accompagnement adapté à votre
-            événement, votre marque ou votre émission.
+            De la scène aux plateaux de production, je mets mes expertises au
+            service de votre événement, de votre marque ou de votre émission.
           </p>
         </div>
       </section>
@@ -34,13 +33,13 @@ export default function ServicesPage() {
       >
         <div className="mb-10 max-w-3xl sm:mb-14">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-blue-200">
-            Les expertises
+            Mes expertises
           </p>
           <h2
             id="services-list-title"
             className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl"
           >
-            Découvrez les services
+            Mon accompagnement
           </h2>
         </div>
 
@@ -74,7 +73,7 @@ export default function ServicesPage() {
                   href={`/services/${service.slug}`}
                   className="mt-6 inline-flex min-h-11 items-center self-start rounded-full border border-blue-200/50 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                 >
-                  Découvrir ce service
+                  Découvrir mon approche
                 </Link>
               </div>
             </article>

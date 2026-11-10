@@ -13,8 +13,8 @@ const slides = [
   {
     src: "/images/portrait-saliou.jpg",
     alt: "Portrait de Saliou Djan Diaby",
-    title: "Saliou Djan Diaby",
-    description: "Une professionnelle engagée au service de vos projets.",
+    title: "Mes engagements",
+    description: "Je m'engage pleinement au service de vos projets.",
   },
   {
     src: "/images/emission-hero.jpg",

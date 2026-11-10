@@ -26,7 +26,7 @@ export default function EditorialServicePage({
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-blue-100 sm:text-sm">
               {service.heroEyebrow}
             </p>
-            <h1 className="max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-8xl">
+            <h1 className="page-title-enter max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-8xl">
               {service.title}
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-8 text-blue-50 md:text-xl">
@@ -87,21 +87,21 @@ export default function EditorialServicePage({
                   className={`object-cover ${section.imagePosition ?? "object-center"}`}
                 />
                 {section.mediaType === "video" && (
-                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-blue-950/65 p-6 text-center">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-blue-950/35 p-6 text-center">
                     {service.videoUrl ? (
                       <Link
                         href={service.videoUrl}
                         target="_blank"
                         rel="noreferrer"
                         aria-label={`Lire ${section.videoLabel ?? "la vidéo de présentation"}`}
-                        className="flex size-14 items-center justify-center rounded-full border border-white/70 text-2xl text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                        className="flex size-14 items-center justify-center rounded-full border border-red-500 bg-red-600 text-2xl text-white transition-colors hover:bg-red-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                       >
                         <span aria-hidden="true">&#9654;</span>
                       </Link>
                     ) : (
                       <span
                         aria-hidden="true"
-                        className="flex size-14 items-center justify-center rounded-full border border-white/70 text-2xl text-white"
+                        className="flex size-14 items-center justify-center rounded-full border border-red-500 bg-red-600 text-2xl text-white"
                       >
                         &#9654;
                       </span>

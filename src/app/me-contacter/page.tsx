@@ -45,7 +45,7 @@ export default function ContactPage() {
             </h2>
             <p className="mt-7 max-w-lg text-base leading-8 text-neutral-400">
               Décrivez votre événement, votre conférence ou votre projet média :
-              son public, ses objectifs et le rôle que vous souhaitez me confier.
+              votre public, vos objectifs et le rôle que vous souhaitez me confier.
               Je vous répondrai avec une proposition adaptée à votre contexte.
             </p>
 

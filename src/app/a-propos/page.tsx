@@ -17,7 +17,7 @@ export default function AProposPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/75 via-blue-950/35 to-indigo-950/45" />
         <div className="relative mx-auto flex min-h-[min(760px,100vh)] max-w-7xl items-end px-6 pb-20 md:px-8 md:pb-28">
           <div className="max-w-4xl">
-            <h1 className="max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-8xl">
+            <h1 className="page-title-enter max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl md:text-8xl">
               {aProposData.hero.title}
             </h1>
             <p className="mt-8 max-w-2xl text-base leading-8 text-blue-50 md:text-xl">

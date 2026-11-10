@@ -1,7 +1,7 @@
 export const aProposData = {
   hero: {
     eyebrow: "Maître de cérémonie · Publicité & Valorisation de marque · Création & Production",
-    title: "À propos de Saliou Djan Diaby",
+    title: "À propos de moi",
     description:
       "Sur scène, en tournage publicitaire et dans la valorisation des marques, je mets ma présence et mon expertise au service de messages clairs, de contenus soignés et d’événements mémorables.",
     image: "/images/mc-hero.jpg",
@@ -21,7 +21,7 @@ export const aProposData = {
     eyebrow: "Mon expertise",
     title: "Une présence attentive, à l’aise sur scène comme au micro",
     lead:
-      "Maître de cérémonie, conférencier et animateur, je fais de chaque prise de parole une rencontre claire, vivante et pensée pour son public.",
+      "Maître de cérémonie, conférencier et animateur, je fais de chaque prise de parole une rencontre claire, vivante et pensée pour chaque public.",
     paragraphs: [
       "Sur scène, je guide le programme, présente les intervenants et relie les temps forts avec précision. En conférence et en animation, je m’attache à rendre les échanges accessibles, à maintenir l’attention et à créer une dynamique avec la salle.",
       "À l’antenne, je mobilise la même écoute et la même préparation pour installer un échange naturel. Quel que soit le format, je veille à respecter le message, le public et l’identité du projet.",
@@ -31,7 +31,7 @@ export const aProposData = {
     image: "/images/emission-plateau-radio.jpg",
     imageAlt: "Saliou Djan Diaby en animation sur un plateau radio",
     videoUrl: "https://www.youtube.com/embed/votre-video-id",
-    buttonLabel: "Lire la vidéo de présentation de Saliou Djan Diaby",
+    buttonLabel: "Lire ma vidéo de présentation",
     caption: "Dans les coulisses d’une émission",
   },
   missionVision: {

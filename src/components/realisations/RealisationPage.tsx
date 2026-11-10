@@ -96,12 +96,12 @@ export default function RealisationPage({ realisation }: RealisationPageProps) {
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className={`object-cover ${section.imagePosition ?? "object-center"}`}
                   />
-                  <div className="absolute inset-0 bg-blue-950/60" />
+                  <div className="absolute inset-0 bg-blue-950/30" />
                   <div className="relative flex h-full flex-col items-center justify-center gap-4 px-6 text-center">
                     <button
                       type="button"
                       aria-label={`Lire ${section.videoLabel ?? "la vidéo de présentation"}`}
-                      className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-black shadow-xl shadow-neutral-950/40 transition-colors hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                      className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-white shadow-xl shadow-neutral-950/40 transition-colors hover:bg-red-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                     >
                       <svg viewBox="0 0 24 24" className="ml-1 h-7 w-7 fill-current" aria-hidden="true">
                         <path d="M8 5.5v13l10-6.5-10-6.5Z" />

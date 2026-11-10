@@ -42,7 +42,7 @@ export const actualites = {
     titleAccent: "",
     titleSuffix: "",
     subtitle:
-      "Célébrer la patrie, c'est aussi honorer le travail quotidien, la sueur et l'engagement de chaque citoyen pour bâtir un avenir prospère et uni.",
+      "Pour moi, célébrer la patrie, c'est honorer le travail quotidien, la sueur et l'engagement de chaque citoyen pour bâtir un avenir prospère et uni.",
     image: "/images/actualite-independance-guinee.jpg",
     imageAlt: "Saliou Djan Diaby drapée aux couleurs du drapeau guinéen",
   },
@@ -55,7 +55,7 @@ export const actualites = {
     dateTime: "2026-10-02",
     title: "Bonne fête de l'Indépendance à notre chère Guinée ! 🇬🇳",
     paragraphs: [
-      "Célébrer l'indépendance de la Guinée, c'est honorer l'histoire de notre beau pays, mais c'est aussi réaffirmer notre engagement pour son avenir. En tant que journaliste, mon rôle est de raconter nos histoires, de mettre en lumière nos talents et de porter la voix de notre peuple avec intégrité. En tant que MC, c'est un privilège de faire vibrer nos grands moments de communion, de dynamiser nos scènes et de célébrer l'excellence guinéenne. Enfin, en tant que créatrice de contenu, c'est une fierté quotidienne de valoriser notre culture, notre patrimoine et notre énergie à travers le numérique. À travers chaque mot, chaque micro tendu et chaque création partagée, c'est l'âme de la Guinée que nous faisons rayonner. Joyeuse fête nationale à toutes et à tous ! Que la paix, l'unité et la prospérité continuent d'illuminer notre nation. ✨",
+      "Célébrer l'indépendance de la Guinée, c'est honorer l'histoire de mon beau pays et réaffirmer mon engagement pour son avenir. En tant que journaliste, je raconte nos histoires, mets en lumière nos talents et porte la voix de notre peuple avec intégrité. En tant que maîtresse de cérémonie, j'ai le privilège de faire vibrer nos grands moments de communion, de dynamiser nos scènes et de célébrer l'excellence guinéenne. Enfin, comme créatrice de contenu, je valorise notre culture, notre patrimoine et notre énergie à travers le numérique. Par mes mots, chaque micro tendu et chaque création partagée, je contribue à faire rayonner l'âme de la Guinée. Joyeuse fête nationale à toutes et à tous ! Que la paix, l'unité et la prospérité continuent d'illuminer notre nation. ✨",
     ],
     image: "/images/actualite-independance-guinee.jpg",
     imageAlt: "Célébration de la fête de l'Indépendance de la Guinée",
@@ -65,12 +65,12 @@ export const actualites = {
     indexLabel: "02 / En images",
     title: "La parole se vit aussi en mouvement",
     paragraphs: [
-      "Un événement national ne se résume pas à un programme. Il se construit dans les regards, les voix et l'énergie de ceux qui œuvrent pour le pays. Chaque action compte pour faire rayonner la Guinée au travail.",
+      "Un événement national ne se résume pas à un programme. Je le vois se construire dans les regards, les voix et l'énergie de celles et ceux qui œuvrent pour le pays. Chaque action compte pour faire rayonner la Guinée au travail.",
     ],
     keyPoints: [
-      "Une présence qui insuffle l'énergie et la dynamique du travail bien fait.",
-      "Un engagement profond pour porter haut les valeurs et l'identité guinéennes.",
-      "Des messages clairs, fédérateurs et tournés vers le développement de notre nation.",
+      "J'insuffle l'énergie et la dynamique du travail bien fait par ma présence.",
+      "Je m'engage à porter haut les valeurs et l'identité guinéennes.",
+      "Je porte des messages clairs, fédérateurs et tournés vers le développement de notre nation.",
     ],
     mediaType: "video",
     image: "/images/actualite-independance-guinee.jpg",

@@ -21,7 +21,7 @@ export default function ActualitesPage() {
         />
         <div className="relative mx-auto flex min-h-[42rem] max-w-7xl items-end px-6 pb-14 md:min-h-[46rem] md:px-8 md:pb-20">
           <div className="max-w-3xl">
-            <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
+            <h1 className="page-title-enter max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-7xl">
               {hero.title}
             </h1>
             <p className="mt-5 text-sm font-medium text-blue-50 md:text-base">
