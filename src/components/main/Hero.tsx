@@ -6,16 +6,16 @@ export default function Hero() {
 		<section className="bg-blue-950 px-6 py-16 md:px-8 md:py-24">
 			<div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
 				<div className="flex flex-col items-start justify-center rounded-[2rem] border border-blue-800 bg-gradient-to-br from-blue-900 to-indigo-950 p-7 shadow-2xl shadow-black/20 sm:p-10 lg:p-12">
-					<p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-blue-200 sm:text-sm">
-						MAÎTRESSE DE CÉRÉMONIE • JOURNALISTE • PRODUCTRICE D&apos;ÉMISSIONS
+					<p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-200 sm:text-xs sm:tracking-[0.24em]">
+						PUBLICITAIRE | ANIMATRICE RADIO &amp; TV | MAÎTRESSE DE CÉRÉMONIE | CRÉATRICE DE CONTENU
 					</p>
-					<h1 className="hero-copy-enter max-w-[14ch] text-balance text-3xl font-bold leading-[1.08] tracking-tight text-white sm:max-w-[15ch] sm:text-4xl md:max-w-[14ch] md:text-5xl lg:text-[3.2rem]">
-						Bienvenue, je suis Saliou Djan Diaby
+					<h1 className="hero-copy-enter max-w-[15ch] text-balance text-3xl font-bold leading-[1.08] tracking-tight text-white sm:max-w-[15ch] sm:text-4xl md:max-w-[14ch] md:text-5xl lg:text-[3.2rem]">
+						Bienvenue dans mon univers, je suis Saly la Pub !
 					</h1>
 					<p className="hero-copy-enter hero-copy-enter-delay-1 mt-6 max-w-xl text-base leading-8 text-blue-100 sm:text-lg">
-						Maîtresse de cérémonie, journaliste et productrice d&apos;émissions,
-						je vous accompagne avec écoute et enthousiasme pour faire de vos
-						événements et de vos projets des moments vivants, fluides et mémorables.
+						Passionnée par la communication, la publicité et les médias, je mets
+						ma créativité, ma voix et mon savoir-faire au service des marques,
+						des événements et des projets ambitieux.
 					</p>
 					<div className="mt-8 flex flex-wrap items-center gap-4">
 						<Link
